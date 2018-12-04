@@ -1,8 +1,11 @@
-var fib := func(n)
-    if n = 1 or n = 2 then return 1;
-    else return fib(n-1) + fib(n-2);
-    end
+var x := 1
+var s := "Hello"
+
+var tmp := x + s
+
+if s = "Hello" then
+    s := 2
+    var t := 2
 end
 
-// Should be 55
-print fib(10)
+t := 3

@@ -1,21 +1,15 @@
 package main.main;
 
-
-import antlr.antlr.DBaseVisitor;
-import antlr.antlr.DLexer;
-import antlr.antlr.DParser;
+import d_grammar.DLexer;
+import d_grammar.DParser;
 
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
-
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import static jdk.nashorn.internal.objects.Global.print;
+import java.io.File;
+import java.io.PrintWriter;
 
 
 public class Main {
@@ -28,13 +22,14 @@ public class Main {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
 
         DParser parser = new DParser(tokens);
-        ParseTree tree = parser.compilation_unit();
+        ParseTree tree = parser.program();
+
+        ScopeChecker.check(tree);
 
         String s = JsonCreater.toJson(tree);
-        System.out.println(s);
-//        String a = "a\na";
-//        System.out.println(a);
-
+        PrintWriter pw = new PrintWriter(new File("ast.json"));
+        pw.write(s);
+        pw.close();
     }
 
 }
