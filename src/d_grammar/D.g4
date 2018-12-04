@@ -6,10 +6,10 @@ body : (statement)+;
 
 statement : declaration
     | assignment
-    | if
+    | if_statement
     | for_loop
     | while_loop
-    | return
+    | return_statement
     | print;
 
 declaration :  'var' var_definition (',' var_definition)*;
@@ -18,13 +18,13 @@ var_definition : IDENT (':=' expression)?;
 
 assignment : reference ':=' expression;
 
-if : 'if' expression 'then' body ('else' body)? 'end';
+if_statement : 'if' expression 'then' body ('else' body)? 'end';
 
 while_loop : 'while' expression 'then' body 'end';
 
 for_loop : 'for' (IDENT 'in')? expression '..' expression 'loop' body 'end';
 
-return : 'return' expression?;
+return_statement : 'return' expression?;
 
 print : 'print' expression (',' expression)*;
 
