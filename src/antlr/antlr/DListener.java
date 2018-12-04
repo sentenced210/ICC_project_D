@@ -1,4 +1,4 @@
-// Generated from /home/nariman/Desktop/compilers/src/antlr/antlr/D.g4 by ANTLR 4.7
+// Generated from C:/Users/aNazy/Documents/GitHub/ICC_project_D/src/antlr/antlr\D.g4 by ANTLR 4.7
 package antlr.antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 

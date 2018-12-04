@@ -8,7 +8,7 @@ grammar D;
 compilation_unit : program EOF;
 
 // Ready
-program : scope;
+program : scope EOF;
 
 // Ready
 scope : (statement ';'?)* ;
