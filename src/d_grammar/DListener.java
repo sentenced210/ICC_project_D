@@ -1,4 +1,4 @@
-// Generated from /Users/azat/Documents/github/ICC_project_D/src/d_grammar/D.g4 by ANTLR 4.7
+// Generated from /home/nariman/Desktop/ICC_project_D/src/d_grammar/D.g4 by ANTLR 4.7
 package d_grammar;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 

@@ -3,6 +3,7 @@ package main.main;
 import d_grammar.DLexer;
 import d_grammar.DParser;
 
+import interpreter.DVisitorInterpreter;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -30,6 +31,15 @@ public class Main {
         PrintWriter pw = new PrintWriter(new File("ast.json"));
         pw.write(s);
         pw.close();
+
+
+        DVisitorInterpreter interpreter = new DVisitorInterpreter();
+        interpreter.visit(tree);
+        System.out.println(interpreter.code);
+
+        System.out.println(interpreter.globalScope.keySet());
+        System.out.println(interpreter.globalScope.values());
     }
+
 
 }
