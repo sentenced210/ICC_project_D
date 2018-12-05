@@ -1,9 +1,6 @@
 var x := 1
-var s := "Hello"
+var s := 6
 var tmp := x + s
-
-if s = "Hello" then
-    s := 2
-    var t := 2
-end
-print(s)
+var b
+b := x + 5
+print(tmp)

@@ -11,7 +11,6 @@ import java.util.HashMap;
 public class DVisitorInterpreter extends DBaseVisitor {
 
     public String code = "";
-    public String result = "";
     public HashMap<String, String> globalScope = new HashMap<>();
 
     @Override
@@ -52,7 +51,13 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitFactor(DParser.FactorContext ctx) {
         code = code + ctx.getText() + "\n";
-
+        String operation = "";
+        if (ctx.children.size()>1){
+            for (int i = 0; i < ctx.children.size(); i++) {
+                operation = operation + ctx.children.get(i).getText();
+            }
+            System.out.println(operation);
+        }
         return super.visitFactor(ctx);
     }
 
@@ -99,8 +104,6 @@ public class DVisitorInterpreter extends DBaseVisitor {
 
     @Override
     public Object visitPrint(DParser.PrintContext ctx) {
-        code = code + ctx.getText() + "\n";
-
         return super.visitPrint(ctx);
     }
 
@@ -135,7 +138,11 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitReference(DParser.ReferenceContext ctx) {
         code = code + ctx.getText() + "\n";
-
+        if(ctx.getParent().children.size()>1){
+            for (int i = 0; i < ctx.getParent().children.size(); i++) {
+                if()
+            }
+        }
         return super.visitReference(ctx);
     }
 
@@ -162,6 +169,7 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitTerm(DParser.TermContext ctx) {
         code = code + ctx.getText() + "\n";
+//        globalScope.put()
         return super.visitTerm(ctx);
     }
 
@@ -196,12 +204,11 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitVar_definition(DParser.Var_definitionContext ctx) {
         code = code + ctx.getText() + "\n";
-        if(ctx.getText().length()>1){
-            globalScope.put(ctx.getText().split(":=")[0], ctx.getText().split(":=")[1]);
+        if (ctx.getChild(2)==null){
+            globalScope.put(ctx.getChild(0).getText(), "empty");
         }
-        else{
-            globalScope.put(ctx.getText(), "empty");
-
+        else {
+            globalScope.put(ctx.getChild(0).getText(), ctx.getChild(2).getText());
         }
         return super.visitVar_definition(ctx);
     }

@@ -2,29 +2,35 @@ package interpreter;
 
 public class Value {
 
-    public static Value VOID = new Value(new Object());
+    public static Value VOID = new Value(new String());
 
-    final Object value;
+    final String value;
 
-    public Value(Object value) {
+
+    public Value(String value) {
         this.value = value;
     }
 
     public Boolean asBoolean() {
-        return (Boolean)value;
+        return Boolean.parseBoolean(value);
     }
 
     public Double asDouble() {
-        return (Double)value;
+        return Double.parseDouble(value);
     }
 
     public String asString() {
         return String.valueOf(value);
     }
-
-    public boolean isDouble() {
-        return value instanceof Double;
+    public Integer asInteger() {
+        return Integer.parseInt(value);
     }
+
+
+
+
+
+
 
     @Override
     public int hashCode() {
