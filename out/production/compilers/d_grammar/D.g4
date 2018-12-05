@@ -101,3 +101,4 @@ IDENT : [A-Za-z][_a-zA-Z0-9]*;
 Comment : ('//' ~[\r\n]* | '/*' .*? '*/') -> skip;
 
 WS: [\n\t\r ;]+ -> skip;
+

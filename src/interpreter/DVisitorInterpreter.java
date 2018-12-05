@@ -2,16 +2,15 @@ package interpreter;
 
 import d_grammar.DBaseVisitor;
 import d_grammar.DParser;
-import org.antlr.v4.runtime.tree.ErrorNode;
-import org.antlr.v4.runtime.tree.RuleNode;
-import org.antlr.v4.runtime.tree.TerminalNode;
+import org.antlr.v4.runtime.tree.*;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class DVisitorInterpreter extends DBaseVisitor {
 
     public String code = "";
-    public HashMap<String, String> globalScope = new HashMap<>();
+    public Map<String, String> memory = new HashMap<>();
 
     @Override
     public Object visitArray(DParser.ArrayContext ctx) {
@@ -44,7 +43,33 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitExpression(DParser.ExpressionContext ctx) {
         code = code + ctx.getText() + "\n";
+        String s = "";
+        if (ctx.children.size() > 1) {
+            for (int i = 0; i < ctx.children.size(); i++) {
+                if (i % 2 == 0) {
+                    if (ctx.getChild(i).getText().equals("true")) {
+                        s = s.concat("1");
+                    } else {
+                        s = s.concat("0");
+                    }
+                } else {
+                    if (ctx.getChild(i).getText().equals("and")) {
+                        s = s.concat("&");
 
+                    } else if (ctx.getChild(i).getText().equals("or")) {
+                        s = s + "|";
+                    } else if (ctx.getChild(i).getText().equals("xor")) {
+                        s = s + "^";
+                    }
+                }
+
+
+            }
+
+        }
+        if (ctx.children.size()==1){
+
+        }
         return super.visitExpression(ctx);
     }
 
@@ -52,7 +77,7 @@ public class DVisitorInterpreter extends DBaseVisitor {
     public Object visitFactor(DParser.FactorContext ctx) {
         code = code + ctx.getText() + "\n";
         String operation = "";
-        if (ctx.children.size()>1){
+        if (ctx.children.size() > 1) {
             for (int i = 0; i < ctx.children.size(); i++) {
                 operation = operation + ctx.children.get(i).getText();
             }
@@ -78,6 +103,7 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitFunction_literal(DParser.Function_literalContext ctx) {
         code = code + ctx.getText() + "\n";
+
         return super.visitFunction_literal(ctx);
     }
 
@@ -110,6 +136,9 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitProgram(DParser.ProgramContext ctx) {
         code = code + ctx.getText() + "\n";
+        if (ctx.children.size()!=1){
+               tree.addChildren(ctx.children);
+        }
 
         return super.visitProgram(ctx);
     }
@@ -138,9 +167,8 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitReference(DParser.ReferenceContext ctx) {
         code = code + ctx.getText() + "\n";
-        if(ctx.getParent().children.size()>1){
+        if (ctx.getParent().children.size() > 1) {
             for (int i = 0; i < ctx.getParent().children.size(); i++) {
-                if()
             }
         }
         return super.visitReference(ctx);
@@ -149,6 +177,7 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitRelation(DParser.RelationContext ctx) {
         code = code + ctx.getText() + "\n";
+
         return super.visitRelation(ctx);
     }
 
@@ -204,12 +233,8 @@ public class DVisitorInterpreter extends DBaseVisitor {
     @Override
     public Object visitVar_definition(DParser.Var_definitionContext ctx) {
         code = code + ctx.getText() + "\n";
-        if (ctx.getChild(2)==null){
-            globalScope.put(ctx.getChild(0).getText(), "empty");
-        }
-        else {
-            globalScope.put(ctx.getChild(0).getText(), ctx.getChild(2).getText());
-        }
+
+        memory.put(ctx.getChild(0).getText(), ctx.getChild(2).getText());
         return super.visitVar_definition(ctx);
     }
 
@@ -222,7 +247,6 @@ public class DVisitorInterpreter extends DBaseVisitor {
 
     @Override
     public boolean equals(Object o) {
-
         return super.equals(o);
     }
 

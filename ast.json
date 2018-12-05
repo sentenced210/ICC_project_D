@@ -35,8 +35,128 @@
                                             {
                                               "literal": [
                                                 {
-                                                  "type": 47,
-                                                  "text": "1"
+                                                  "type": 50,
+                                                  "text": "true"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 16,
+                          "text": "and"
+                        },
+                        {
+                          "relation": [
+                            {
+                              "factor": [
+                                {
+                                  "term": [
+                                    {
+                                      "unary": [
+                                        {
+                                          "primary": [
+                                            {
+                                              "literal": [
+                                                {
+                                                  "type": 50,
+                                                  "text": "false"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 16,
+                          "text": "and"
+                        },
+                        {
+                          "relation": [
+                            {
+                              "factor": [
+                                {
+                                  "term": [
+                                    {
+                                      "unary": [
+                                        {
+                                          "primary": [
+                                            {
+                                              "literal": [
+                                                {
+                                                  "type": 50,
+                                                  "text": "true"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "statement": [
+            {
+              "declaration": [
+                {
+                  "type": 1,
+                  "text": "var"
+                },
+                {
+                  "var_definition": [
+                    {
+                      "type": 51,
+                      "text": "a"
+                    },
+                    {
+                      "type": 3,
+                      "text": ":\u003d"
+                    },
+                    {
+                      "expression": [
+                        {
+                          "relation": [
+                            {
+                              "factor": [
+                                {
+                                  "term": [
+                                    {
+                                      "unary": [
+                                        {
+                                          "primary": [
+                                            {
+                                              "literal": [
+                                                {
+                                                  "type": 50,
+                                                  "text": "true"
                                                 }
                                               ]
                                             }
@@ -92,173 +212,9 @@
                                               "literal": [
                                                 {
                                                   "type": 47,
-                                                  "text": "6"
+                                                  "text": "65"
                                                 }
                                               ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "statement": [
-            {
-              "declaration": [
-                {
-                  "type": 1,
-                  "text": "var"
-                },
-                {
-                  "var_definition": [
-                    {
-                      "type": 51,
-                      "text": "tmp"
-                    },
-                    {
-                      "type": 3,
-                      "text": ":\u003d"
-                    },
-                    {
-                      "expression": [
-                        {
-                          "relation": [
-                            {
-                              "factor": [
-                                {
-                                  "term": [
-                                    {
-                                      "unary": [
-                                        {
-                                          "reference": [
-                                            {
-                                              "type": 51,
-                                              "text": "x"
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": 24,
-                                  "text": "+"
-                                },
-                                {
-                                  "term": [
-                                    {
-                                      "unary": [
-                                        {
-                                          "reference": [
-                                            {
-                                              "type": 51,
-                                              "text": "s"
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "statement": [
-            {
-              "declaration": [
-                {
-                  "type": 1,
-                  "text": "var"
-                },
-                {
-                  "var_definition": [
-                    {
-                      "type": 51,
-                      "text": "b"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "statement": [
-            {
-              "assignment": [
-                {
-                  "reference": [
-                    {
-                      "type": 51,
-                      "text": "b"
-                    }
-                  ]
-                },
-                {
-                  "type": 3,
-                  "text": ":\u003d"
-                },
-                {
-                  "expression": [
-                    {
-                      "relation": [
-                        {
-                          "factor": [
-                            {
-                              "term": [
-                                {
-                                  "unary": [
-                                    {
-                                      "reference": [
-                                        {
-                                          "type": 51,
-                                          "text": "x"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": 24,
-                              "text": "+"
-                            },
-                            {
-                              "term": [
-                                {
-                                  "unary": [
-                                    {
-                                      "primary": [
-                                        {
-                                          "literal": [
-                                            {
-                                              "type": 47,
-                                              "text": "5"
                                             }
                                           ]
                                         }
@@ -316,7 +272,7 @@
                                                               "reference": [
                                                                 {
                                                                   "type": 51,
-                                                                  "text": "tmp"
+                                                                  "text": "a"
                                                                 }
                                                               ]
                                                             }
