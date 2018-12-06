@@ -126,6 +126,36 @@ public class LexicalAndParserTests {
         Assert.assertEquals("OK", assertMessage);
     }
 
+    @Test
+    public void normalGrammar5(){
+        CharStream stream = CharStreams.fromString("var i := 0, j := 0\n"
+                +"while i<10 then\n"
+                +"while j<10 then\n"
+                +"print \"i = \", i, \" j = \", j;\r\n"
+                +"end "+"end");
+
+        DLexer lexer = new DLexer(stream);
+
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+
+        DParser parser = new DParser(tokens);
+
+        SyntaxErrorListener syntaxErrorListener = new SyntaxErrorListener();
+
+        parser.removeErrorListeners();
+        parser.addErrorListener(syntaxErrorListener.INSTANCE);
+
+        ParseTree tree = null;
+
+        String assertMessage = "OK";
+        try {
+            tree = parser.program();
+        } catch (ParseCancellationException e) {
+            assertMessage = e.getMessage();
+        }
+
+        Assert.assertEquals("OK", assertMessage);
+    }
 
 
 }
