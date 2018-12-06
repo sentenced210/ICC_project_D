@@ -1,12 +1,10 @@
 package parser;
 
 import d_grammar.DLexer;
-import org.antlr.v4.codegen.model.decl.Decl;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
 import scope.Scope;
-import types.EmptyValue;
 
 public class Parser {
     private ParseTree tree;
@@ -57,7 +55,7 @@ public class Parser {
             String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
             System.out.println(name);
             switch (name) {
-
+                
             }
         }
         return new Empty();
