@@ -13,12 +13,44 @@
                 {
                   "var_definition": [
                     {
-                      "type": 47,
-                      "text": "1"
-                    },
-                    {
                       "type": 51,
                       "text": "x"
+                    },
+                    {
+                      "type": 3,
+                      "text": ":\u003d"
+                    },
+                    {
+                      "expression": [
+                        {
+                          "relation": [
+                            {
+                              "factor": [
+                                {
+                                  "term": [
+                                    {
+                                      "unary": [
+                                        {
+                                          "primary": [
+                                            {
+                                              "literal": [
+                                                {
+                                                  "type": 47,
+                                                  "text": "1"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }

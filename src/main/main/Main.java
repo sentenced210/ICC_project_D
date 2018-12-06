@@ -12,6 +12,7 @@ import d_grammar.DParser;
 import java.io.File;
 import java.io.PrintWriter;
 import java.text.ParseException;
+import java.util.Scanner;
 
 import parser.Parser;
 
@@ -31,21 +32,21 @@ public class Main {
 
         parser.removeErrorListeners();
         parser.addErrorListener(syntaxErrorListener.INSTANCE);
+
+        ParseTree tree = null;
         try {
-            ParseTree tree = parser.program();
-        } catch (ParseCancellationException e){
+            tree = parser.program();
+        } catch (ParseCancellationException e) {
             System.out.println(e.getMessage());
         }
 
-//        if (syntaxErrorListener.hasErrors()){
-//            System.out.println(syntaxErrorListener.errorMessages());
-//        }
 
 
-//        String s = JsonCreater.toJson(tree);
-//        PrintWriter pw = new PrintWriter(new File("ast.json"));
-//        pw.write(s);
-//        pw.close();
+
+        String s = JsonCreater.toJson(tree);
+        PrintWriter pw = new PrintWriter(new File("ast.json"));
+        pw.write(s);
+        pw.close();
 
 
 //        ScopeChecker sc = new ScopeChecker();

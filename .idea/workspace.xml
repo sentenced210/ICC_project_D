@@ -1,122 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e493652-ba0b-4ffd-b096-9ac7acaad85c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/main/SyntaxErrorListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/StatementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7e493652-ba0b-4ffd-b096-9ac7acaad85c" name="Default Changelist" comment="Adding tests, rewrite error listener on lexer and parser">
+      <change afterPath="$PROJECT_DIR$/tests/LexicalAndParserTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compilers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/compilers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/D.g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/D.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DBaseListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DBaseVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DLexer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$AssignmentContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$BodyContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$Compilation_unitContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$DeclarationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$FactorContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$Function_literalContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$InvocationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$LiteralContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ObjectContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$PrimaryContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$PrintContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ProgramContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$R_forContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$R_ifContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$R_returnContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$R_whileContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ReadIntContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ReadRealContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ReadStringContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ReferenceContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$RelationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$ScopeContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$SimpleContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$StatementContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$SummandContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$TupleContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$Type_indicatorContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser$Var_definitionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/antlr/antlr/DVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ArrayContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ArrayContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$AssignmentContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$BodyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$BodyContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$DeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$DeclarationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$FactorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$FactorContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$For_loopContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$For_loopContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Function_bodyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Function_bodyContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Function_literalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Function_literalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$If_statementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$If_statementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$LiteralContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$LoopContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$LoopContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$PrimaryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$PrimaryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$PrintContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Read_intContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Read_intContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Read_realContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Read_realContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Read_stringContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Read_stringContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ReferenceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$ReferenceContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$RelationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$RelationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Return_statementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Return_statementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$StatementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$TermContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$TermContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$TupleContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$TupleContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Tuple_elementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Tuple_elementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Type_indicatorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Type_indicatorContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$UnaryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$UnaryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Var_definitionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$Var_definitionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$While_loopContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser$While_loopContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/d_grammar/DParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/main/main/Executor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/main/main/Executor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/main/main/JsonCreater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/main/main/JsonCreater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/main/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/main/main/ScopeChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/main/main/ScopeChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Add.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Declaration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Declaration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Empty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Equal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Equal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Greater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Greater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Less.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Less.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Literal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Literal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Multiply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Multiply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Parenthesized.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Parenthesized.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Primary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Primary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Relation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Relation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Statement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Statement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Subtract.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Subtract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Term.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Term.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/scope/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/scope/Scope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/BooleanValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/BooleanValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/EmptyValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/EmptyValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/IntegerValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/IntegerValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/Types.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/Types.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/Value.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/Value.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/D.g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/D.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/antlr/DVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/compilers/main/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/main/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
     </list>
@@ -187,7 +76,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="g4" value="6" />
-          <entry key="java" value="26" />
+          <entry key="java" value="28" />
           <entry key="json" value="2" />
           <entry key="test" value="3" />
           <entry key="tokens" value="3" />
@@ -197,7 +86,7 @@
         <counts>
           <entry key="ANTLR v4 grammar file" value="5" />
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="28" />
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
@@ -213,15 +102,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="g4" value="1898" />
-          <entry key="java" value="1077" />
-          <entry key="test" value="7" />
+          <entry key="java" value="1392" />
+          <entry key="test" value="13" />
+          <entry key="txt" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ANTLR v4 grammar file" value="1898" />
-          <entry key="JAVA" value="1077" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="1392" />
+          <entry key="PLAIN_TEXT" value="115" />
         </counts>
       </usages-collector>
     </session>
@@ -271,7 +161,7 @@
         <entry file="file://$PROJECT_DIR$/test">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -279,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ast.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="374">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -288,17 +178,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/d_grammar/D.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
+            <state relative-caret-position="44">
               <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/main/SyntaxErrorListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state>
+              <caret selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -309,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/StatementsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="88">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#113#114#0" expanded="true" />
@@ -320,11 +210,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/LexicalAndParserTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#121#122#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="192">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -356,8 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/antlr/antlr/myD.g4" />
-        <option value="$PROJECT_DIR$/ast.json" />
         <option value="$PROJECT_DIR$/src/main/main/TypesChecker.java" />
         <option value="$PROJECT_DIR$/src/executor/TreeGenerator.java" />
         <option value="$PROJECT_DIR$/src/d_grammar/D.g4" />
@@ -403,10 +305,12 @@
         <option value="$PROJECT_DIR$/src/parser/Parser.java" />
         <option value="$PROJECT_DIR$/tests/StatementsTest.java" />
         <option value="$PROJECT_DIR$/tests/DescriptiveErrorListener.java" />
-        <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/src/main/main/LexerErrorListener.java" />
-        <option value="$PROJECT_DIR$/src/main/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/main/SyntaxErrorListener.java" />
+        <option value="$PROJECT_DIR$/src/main/main/LexicalErrorListener.java" />
+        <option value="$PROJECT_DIR$/src/main/main/Main.java" />
+        <option value="$PROJECT_DIR$/test" />
+        <option value="$PROJECT_DIR$/tests/LexicalAndParserTests.java" />
       </list>
     </option>
   </component>
@@ -493,7 +397,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544115088050" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544120160815" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/gson-2.8.2.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -520,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.LexicalAndParserTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.main.Main" />
       <module name="compilers" />
@@ -530,6 +434,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LexicalAndParserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="compilers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LexicalAndParserTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -545,11 +457,13 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.StatementsTest" />
+      <item itemvalue="JUnit.LexicalAndParserTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.LexicalAndParserTests" />
         <item itemvalue="JUnit.StatementsTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -575,6 +489,14 @@
       <workItem from="1543914574232" duration="960000" />
       <workItem from="1544091025350" duration="14322000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding own error listener on the parser">
+      <created>1544115190720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544115190720</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -584,15 +506,30 @@
     <history-entry file="StatementsTest - 2018.12.06 at 19h 17m 07s.xml">
       <configuration name="StatementsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StatementsTest - 2018.12.06 at 21h 08m 22s.xml">
+      <configuration name="StatementsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LexicalAndParserTests - 2018.12.06 at 21h 08m 28s.xml">
+      <configuration name="LexicalAndParserTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LexicalAndParserTests - 2018.12.06 at 21h 09m 20s.xml">
+      <configuration name="LexicalAndParserTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LexicalAndParserTests - 2018.12.06 at 21h 11m 06s.xml">
+      <configuration name="LexicalAndParserTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LexicalAndParserTests - 2018.12.06 at 21h 12m 32s.xml">
+      <configuration name="LexicalAndParserTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49374000" />
+    <option name="totallyTimeSpent" value="52482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28944564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28944564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,7 +538,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2864807" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2864807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -614,7 +551,7 @@
       <window_info anchor="bottom" id="Anonymous Apex" order="12" />
       <window_info anchor="bottom" id="Tool Output" order="13" weight="0.3304721" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.32725322" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32832617" />
+      <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" weight="0.32832617" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
@@ -671,13 +608,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding own error listener on the parser" />
+    <MESSAGE value="Adding tests, rewrite error listener on lexer and parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding tests, rewrite error listener on lexer and parser" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/executor/Literal.java" />
-    <entry file="file://$PROJECT_DIR$/src/executor/Body.java" />
     <entry file="file://$PROJECT_DIR$/src/executor/Binary.java" />
     <entry file="file://$PROJECT_DIR$/src/main/main/JsonCreater.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1011,31 +951,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test">
+    <entry file="file://$PROJECT_DIR$/src/main/main/LexicalErrorListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ast.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/d_grammar/D.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="330">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/StatementsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="88">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#113#114#0" expanded="true" />
@@ -1044,22 +973,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/ast.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="374">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/SyntaxErrorListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/SyntaxErrorListener.java">
+    <entry file="file://$PROJECT_DIR$/src/d_grammar/D.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/LexicalAndParserTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
           </folding>
         </state>
       </provider>
