@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e493652-ba0b-4ffd-b096-9ac7acaad85c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/parser/Declaration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/EmptyValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parser/Empty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Add.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Equal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Equal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Add.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Declaration.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Greater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Greater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Less.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Less.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Multiply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Multiply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Parenthesized.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Parenthesized.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Statement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Statement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Subtract.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Subtract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/scope/Scope$Variable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/scope/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/scope/Scope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Equal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Equal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Greater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Greater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Integer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Integer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Less.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Less.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Multiply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Multiply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Parenthesized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parenthesized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Declaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Declaration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parser/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Statement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Subtract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Subtract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scope/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scope/Scope.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,31 +116,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="g4" value="4" />
-          <entry key="java" value="106" />
-          <entry key="json" value="3" />
-          <entry key="test" value="2" />
+          <entry key="java" value="108" />
+          <entry key="json" value="4" />
+          <entry key="test" value="3" />
           <entry key="tokens" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ANTLR v4 grammar file" value="4" />
-          <entry key="JAVA" value="106" />
-          <entry key="JSON" value="3" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="JAVA" value="108" />
+          <entry key="JSON" value="4" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="g4" value="27" />
-          <entry key="java" value="8559" />
+          <entry key="java" value="9024" />
           <entry key="test" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ANTLR v4 grammar file" value="27" />
-          <entry key="JAVA" value="8559" />
+          <entry key="JAVA" value="9024" />
           <entry key="PLAIN_TEXT" value="196" />
         </counts>
       </usages-collector>
@@ -172,23 +154,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Parenthesized.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="-51">
+              <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/parser/Empty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,88 +181,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Primary.java">
+        <entry file="file://$PROJECT_DIR$/test">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Relation.java">
+        <entry file="file://$PROJECT_DIR$/ast.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Statement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Subtract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Term.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/parser/Declaration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Expression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Greater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -307,7 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/helper/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/src/helper/CodeGeneratorToFile.java" />
         <option value="$PROJECT_DIR$/src/helper/RuntimeTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/main/JsonCreater.java" />
@@ -346,8 +260,6 @@
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/src/scope/Scope.java" />
         <option value="$PROJECT_DIR$/src/types/EmptyValue.java" />
-        <option value="$PROJECT_DIR$/src/parser/Parser.java" />
-        <option value="$PROJECT_DIR$/src/parser/Statement.java" />
         <option value="$PROJECT_DIR$/src/parser/Add.java" />
         <option value="$PROJECT_DIR$/src/parser/Equal.java" />
         <option value="$PROJECT_DIR$/src/parser/Integer.java" />
@@ -355,9 +267,12 @@
         <option value="$PROJECT_DIR$/src/parser/Multiply.java" />
         <option value="$PROJECT_DIR$/src/parser/Parenthesized.java" />
         <option value="$PROJECT_DIR$/src/parser/Subtract.java" />
-        <option value="$PROJECT_DIR$/src/parser/Declaration.java" />
         <option value="$PROJECT_DIR$/src/parser/Greater.java" />
         <option value="$PROJECT_DIR$/src/parser/Expression.java" />
+        <option value="$PROJECT_DIR$/src/parser/Declaration.java" />
+        <option value="$PROJECT_DIR$/src/parser/Statement.java" />
+        <option value="$PROJECT_DIR$/src/parser/Empty.java" />
+        <option value="$PROJECT_DIR$/src/parser/Parser.java" />
       </list>
     </option>
   </component>
@@ -452,7 +367,7 @@
     <property name="$PROJECT_DIR$/src/d_grammar/D.g4::/package" value="d_grammar" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544105585887" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544106378254" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/gson-2.8.2.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -519,12 +434,12 @@
       <updated>1543833373039</updated>
       <workItem from="1543847183908" duration="16759000" />
       <workItem from="1543914574232" duration="960000" />
-      <workItem from="1544091025350" duration="13452000" />
+      <workItem from="1544091025350" duration="14242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40913000" />
+    <option name="totallyTimeSpent" value="41703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -539,7 +454,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28674698" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28674698" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,7 +467,7 @@
       <window_info anchor="bottom" id="Anonymous Apex" order="12" />
       <window_info anchor="bottom" id="Tool Output" order="13" weight="0.3304721" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.32725322" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="15" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
@@ -579,20 +494,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/antlr/antlr/D.tokens">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/d_grammar/DBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/antlr/antlr/D.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -778,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main/ScopeChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -792,13 +686,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ast.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -935,64 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Primary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Relation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Subtract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Term.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="177">
+          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1006,12 +839,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Declaration.java">
+    <entry file="file://$PROJECT_DIR$/src/parser/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Declaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Term.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Subtract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Relation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Primary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Empty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ast.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
           </folding>
         </state>
       </provider>

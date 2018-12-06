@@ -14,7 +14,7 @@ public class Declaration extends Statement {
     }
 
     @Override
-    public Value calculate(Scope scope) throws Exception {
+    public Value execute(Scope scope) throws Exception {
         scope.setValue(varName, exp.calculate(scope));
         return new EmptyValue();
     }
