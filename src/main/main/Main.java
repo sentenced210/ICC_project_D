@@ -50,12 +50,10 @@ public class Main {
         pw.write(s);
         pw.close();
 
-<<<<<<< HEAD
         Parser p = new Parser(tree);
         Body b = p.parse();
         Scope scope = new Scope();
         b.execute(scope);
-=======
 
 //        ScopeChecker sc = new ScopeChecker();
 //        sc.check(tree);
@@ -63,7 +61,6 @@ public class Main {
 //
 //        Parser p = new Parser(tree);
 //        p.parse();
->>>>>>> bb8b30d03c4f3ffea8a0708b3aa51914acc439d0
     }
 
 }
