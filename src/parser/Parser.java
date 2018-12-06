@@ -15,12 +15,11 @@ public class Parser {
     }
 
     public Body parse() {
-        return parseBody(tree);
+        return parseBody(tree.getChild(0));
     }
 
     private Body parseBody(ParseTree tree) {
         Body b = new Body();
-        tree = tree.getChild(0);
         for (int i = 0; i < tree.getChildCount(); i++) {
             b.add(parseStatement(tree.getChild(i).getChild(0)));
         }
@@ -45,6 +44,7 @@ public class Parser {
             }
             case "if_statement" : {
                 Expression condition = parseExpression(tree.getChild(1));
+                System.out.println("BODY");
                 Body body = parseBody(tree.getChild(3));
                 Body elseBody = tree.getChildCount() > 5 ? parseBody(tree.getChild(5)) : null;
                 return new IFStatement(condition, body, elseBody);
@@ -235,6 +235,7 @@ public class Parser {
                     return new Boolean(java.lang.Boolean.valueOf(token.getText()));
                 }
                 case DLexer.STRING: {
+                    System.out.println("STRING=" + token.getText());
                     return new MyString(token.getText());
                 }
                 default: {
