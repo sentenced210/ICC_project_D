@@ -33,12 +33,72 @@
                                         {
                                           "primary": [
                                             {
-                                              "literal": [
+                                              "type": 30,
+                                              "text": "("
+                                            },
+                                            {
+                                              "expression": [
                                                 {
-                                                  "type": 50,
-                                                  "text": "true"
+                                                  "relation": [
+                                                    {
+                                                      "factor": [
+                                                        {
+                                                          "term": [
+                                                            {
+                                                              "unary": [
+                                                                {
+                                                                  "primary": [
+                                                                    {
+                                                                      "literal": [
+                                                                        {
+                                                                          "type": 47,
+                                                                          "text": "1"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 21,
+                                                      "text": "\u003e"
+                                                    },
+                                                    {
+                                                      "factor": [
+                                                        {
+                                                          "term": [
+                                                            {
+                                                              "unary": [
+                                                                {
+                                                                  "primary": [
+                                                                    {
+                                                                      "literal": [
+                                                                        {
+                                                                          "type": 47,
+                                                                          "text": "0"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
                                                 }
                                               ]
+                                            },
+                                            {
+                                              "type": 31,
+                                              "text": ")"
                                             }
                                           ]
                                         }

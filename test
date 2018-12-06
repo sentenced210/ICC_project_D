@@ -1,4 +1,4 @@
-var x := true and false and true
+var x := (1>0) and false and true
 var a := true
 var s := 65
 

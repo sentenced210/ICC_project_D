@@ -37,6 +37,7 @@ public class Main {
         interpreter.visit(tree);
         System.out.println(interpreter.code);
 
+
         System.out.println(interpreter.memory.keySet());
         System.out.println(interpreter.memory.values());
 
