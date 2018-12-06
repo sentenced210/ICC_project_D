@@ -145,10 +145,10 @@
                                         {
                                           "primary": [
                                             {
-                                              "read_int": [
+                                              "literal": [
                                                 {
-                                                  "type": 42,
-                                                  "text": "readInt"
+                                                  "type": 47,
+                                                  "text": "4"
                                                 }
                                               ]
                                             }
@@ -165,6 +165,126 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "statement": [
+            {
+              "if_statement": [
+                {
+                  "type": 4,
+                  "text": "if"
+                },
+                {
+                  "expression": [
+                    {
+                      "relation": [
+                        {
+                          "factor": [
+                            {
+                              "term": [
+                                {
+                                  "unary": [
+                                    {
+                                      "reference": [
+                                        {
+                                          "type": 51,
+                                          "text": "x"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 22,
+                          "text": "\u003d"
+                        },
+                        {
+                          "factor": [
+                            {
+                              "term": [
+                                {
+                                  "unary": [
+                                    {
+                                      "reference": [
+                                        {
+                                          "type": 51,
+                                          "text": "y"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 5,
+                  "text": "then"
+                },
+                {
+                  "body": [
+                    {
+                      "statement": [
+                        {
+                          "print": [
+                            {
+                              "type": 14,
+                              "text": "print"
+                            },
+                            {
+                              "expression": [
+                                {
+                                  "relation": [
+                                    {
+                                      "factor": [
+                                        {
+                                          "term": [
+                                            {
+                                              "unary": [
+                                                {
+                                                  "primary": [
+                                                    {
+                                                      "literal": [
+                                                        {
+                                                          "type": 49,
+                                                          "text": "\"YES\""
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 7,
+                  "text": "end"
                 }
               ]
             }

@@ -43,6 +43,12 @@ public class Parser {
                 }
                 return new PrintFunction(exps);
             }
+            case "if_statement" : {
+                Expression condition = parseExpression(tree.getChild(1));
+                Body body = parseBody(tree.getChild(3));
+                Body elseBody = tree.getChildCount() > 5 ? parseBody(tree.getChild(5)) : null;
+                return new IFStatement(condition, body, elseBody);
+            }
             default:
                 return new Declaration("nothing", new Empty());
         }
