@@ -43,6 +43,12 @@ public class Parser {
                 }
                 return new PrintFunction(exps);
             }
+            case "if_statement" : {
+                Expression condition = parseExpression(tree.getChild(1));
+                Body body = parseBody(tree.getChild(3));
+                Body elseBody = tree.getChildCount() > 5 ? parseBody(tree.getChild(5)) : null;
+                return new IFStatement(condition, body, elseBody);
+            }
             default:
                 return new Declaration("nothing", new Empty());
         }
@@ -227,6 +233,9 @@ public class Parser {
                 }
                 case DLexer.BOOLEAN: {
                     return new Boolean(java.lang.Boolean.valueOf(token.getText()));
+                }
+                case DLexer.STRING: {
+                    return new MyString(token.getText());
                 }
                 default: {
                     return new Empty();

@@ -26,7 +26,11 @@ public class IFStatement extends Statement {
             body.execute(scope);
             scope.endOfScope();
         } else {
-
+            if (elseBody != null) {
+                scope.newScope();
+                elseBody.execute(scope);
+                scope.endOfScope();
+            }
         }
         return new EmptyValue();
     }
