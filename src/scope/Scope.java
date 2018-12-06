@@ -40,7 +40,7 @@ public class Scope {
         }
     }
 
-    private HashMap<String, Stack<Variable>> globalVariables;
+    private HashMap<String, Stack<Value>> globalVariables;
     private Stack<HashSet<String>> localVariables;
 
     public Scope() {
@@ -49,33 +49,29 @@ public class Scope {
     }
 
     public void newScope() {
-        for (String v : localVariables.peek()) {
-
-        }
-
-        if (globalVariables.empty()) {
-            globalVariables.add(new HashSet<>());
-            localVariables.add(new HashSet<>());
-        } else {
-            HashSet<Variable> tmp = new HashSet<>();
-            tmp.addAll(globalVariables.peek());
-            tmp.addAll(localVariables.peek());
-            globalVariables.add(tmp);
-            localVariables.add(new HashSet<>());
-        }
+        localVariables.push(new HashSet<>());
     }
 
     public void endOfScope() {
-        globalVariables.pop();
+        for (String varName : localVariables.peek()) {
+            globalVariables.get(varName).pop();
+            if (globalVariables.get(varName).empty()) {
+                globalVariables.remove(varName);
+            }
+        }
         localVariables.pop();
     }
 
     public void newVariable(String name, Value value) {
-        localVariables.peek().add(new Variable(name, value));
+        if (!globalVariables.containsKey(name)) {
+            globalVariables.put(name, new Stack<>());
+        }
+        globalVariables.get(name).push(value);
+        localVariables.peek().add(name);
     }
 
     public boolean exists(String name) {
-        return globalVariables.peek().contains(new Variable(name, new IntegerValue(1))) || localVariables.peek().contains(new Variable(name, new IntegerValue(1)));
+        return globalVariables.containsKey(name);
     }
 
     public boolean isDeclared(String name) {
@@ -83,6 +79,7 @@ public class Scope {
     }
 
     public void setValue(String name, Value value) {
-
+        globalVariables.get(name).pop();
+        globalVariables.get(name).push(value);
     }
 }
