@@ -24,11 +24,9 @@ public class ScopeChecker {
                     throw new Exception(token.getText() + " was not declared");
                 }
             }
-            // System.out.println(token.getType());
         } else {
-            String name = tree.getClass().getSimpleName().replaceAll("Context$", "");
-            // System.out.println(name);
-            if (name.equals("Body")) {
+            String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
+            if (name.equals("body")) {
                 sc.newScope();
                 for (int i = 0; i < tree.getChildCount(); i++) {
                     traverse(tree.getChild(i));
@@ -36,7 +34,7 @@ public class ScopeChecker {
                 sc.endOfScope();
                 return;
             }
-            if (name.equals("Var_definition")) {
+            if (name.equals("var_definition")) {
                 String varName = tree.getChild(0).getText();
                 if (sc.isDeclared(varName)) {
                     throw new Exception(varName + " is already declared in this scope");

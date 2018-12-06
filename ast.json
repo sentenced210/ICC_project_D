@@ -14,7 +14,7 @@
                   "var_definition": [
                     {
                       "type": 51,
-                      "text": "x"
+                      "text": "a"
                     },
                     {
                       "type": 3,
@@ -33,10 +33,126 @@
                                         {
                                           "primary": [
                                             {
-                                              "literal": [
+                                              "function_literal": [
                                                 {
-                                                  "type": 47,
-                                                  "text": "3"
+                                                  "type": 41,
+                                                  "text": "func"
+                                                },
+                                                {
+                                                  "type": 30,
+                                                  "text": "("
+                                                },
+                                                {
+                                                  "type": 51,
+                                                  "text": "x"
+                                                },
+                                                {
+                                                  "type": 2,
+                                                  "text": ","
+                                                },
+                                                {
+                                                  "type": 51,
+                                                  "text": "y"
+                                                },
+                                                {
+                                                  "type": 31,
+                                                  "text": ")"
+                                                },
+                                                {
+                                                  "function_body": [
+                                                    {
+                                                      "type": 28,
+                                                      "text": "is"
+                                                    },
+                                                    {
+                                                      "body": [
+                                                        {
+                                                          "statement": [
+                                                            {
+                                                              "return_statement": [
+                                                                {
+                                                                  "type": 13,
+                                                                  "text": "return"
+                                                                },
+                                                                {
+                                                                  "expression": [
+                                                                    {
+                                                                      "relation": [
+                                                                        {
+                                                                          "factor": [
+                                                                            {
+                                                                              "term": [
+                                                                                {
+                                                                                  "unary": [
+                                                                                    {
+                                                                                      "reference": [
+                                                                                        {
+                                                                                          "reference": [
+                                                                                            {
+                                                                                              "type": 51,
+                                                                                              "text": "x"
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 30,
+                                                                                          "text": "("
+                                                                                        },
+                                                                                        {
+                                                                                          "expression": [
+                                                                                            {
+                                                                                              "relation": [
+                                                                                                {
+                                                                                                  "factor": [
+                                                                                                    {
+                                                                                                      "term": [
+                                                                                                        {
+                                                                                                          "unary": [
+                                                                                                            {
+                                                                                                              "reference": [
+                                                                                                                {
+                                                                                                                  "type": 51,
+                                                                                                                  "text": "y"
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 31,
+                                                                                          "text": ")"
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 7,
+                                                      "text": "end"
+                                                    }
+                                                  ]
                                                 }
                                               ]
                                             }
@@ -61,74 +177,10 @@
         {
           "statement": [
             {
-              "declaration": [
+              "print": [
                 {
-                  "type": 1,
-                  "text": "var"
-                },
-                {
-                  "var_definition": [
-                    {
-                      "type": 51,
-                      "text": "y"
-                    },
-                    {
-                      "type": 3,
-                      "text": ":\u003d"
-                    },
-                    {
-                      "expression": [
-                        {
-                          "relation": [
-                            {
-                              "factor": [
-                                {
-                                  "term": [
-                                    {
-                                      "unary": [
-                                        {
-                                          "primary": [
-                                            {
-                                              "literal": [
-                                                {
-                                                  "type": 47,
-                                                  "text": "3"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "statement": [
-            {
-              "assignment": [
-                {
-                  "reference": [
-                    {
-                      "type": 51,
-                      "text": "x"
-                    }
-                  ]
-                },
-                {
-                  "type": 3,
-                  "text": ":\u003d"
+                  "type": 14,
+                  "text": "print"
                 },
                 {
                   "expression": [
@@ -143,120 +195,104 @@
                                     {
                                       "reference": [
                                         {
-                                          "type": 51,
-                                          "text": "y"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "statement": [
-            {
-              "while_loop": [
-                {
-                  "type": 8,
-                  "text": "while"
-                },
-                {
-                  "expression": [
-                    {
-                      "relation": [
-                        {
-                          "factor": [
-                            {
-                              "term": [
-                                {
-                                  "unary": [
-                                    {
-                                      "reference": [
-                                        {
-                                          "type": 51,
-                                          "text": "x"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": 21,
-                          "text": "\u003e"
-                        },
-                        {
-                          "factor": [
-                            {
-                              "term": [
-                                {
-                                  "unary": [
-                                    {
-                                      "primary": [
-                                        {
-                                          "literal": [
+                                          "reference": [
                                             {
-                                              "type": 47,
-                                              "text": "0"
+                                              "type": 51,
+                                              "text": "a"
                                             }
                                           ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": 9,
-                  "text": "loop"
-                },
-                {
-                  "body": [
-                    {
-                      "statement": [
-                        {
-                          "print": [
-                            {
-                              "type": 14,
-                              "text": "print"
-                            },
-                            {
-                              "expression": [
-                                {
-                                  "relation": [
-                                    {
-                                      "factor": [
+                                        },
                                         {
-                                          "term": [
+                                          "type": 30,
+                                          "text": "("
+                                        },
+                                        {
+                                          "expression": [
                                             {
-                                              "unary": [
+                                              "relation": [
                                                 {
-                                                  "primary": [
+                                                  "factor": [
                                                     {
-                                                      "literal": [
+                                                      "term": [
                                                         {
-                                                          "type": 49,
-                                                          "text": "\"YES\""
+                                                          "unary": [
+                                                            {
+                                                              "primary": [
+                                                                {
+                                                                  "function_literal": [
+                                                                    {
+                                                                      "type": 41,
+                                                                      "text": "func"
+                                                                    },
+                                                                    {
+                                                                      "type": 30,
+                                                                      "text": "("
+                                                                    },
+                                                                    {
+                                                                      "type": 51,
+                                                                      "text": "t"
+                                                                    },
+                                                                    {
+                                                                      "type": 31,
+                                                                      "text": ")"
+                                                                    },
+                                                                    {
+                                                                      "function_body": [
+                                                                        {
+                                                                          "type": 45,
+                                                                          "text": "\u003d\u003e"
+                                                                        },
+                                                                        {
+                                                                          "expression": [
+                                                                            {
+                                                                              "relation": [
+                                                                                {
+                                                                                  "factor": [
+                                                                                    {
+                                                                                      "term": [
+                                                                                        {
+                                                                                          "unary": [
+                                                                                            {
+                                                                                              "reference": [
+                                                                                                {
+                                                                                                  "type": 51,
+                                                                                                  "text": "t"
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 26,
+                                                                                          "text": "*"
+                                                                                        },
+                                                                                        {
+                                                                                          "unary": [
+                                                                                            {
+                                                                                              "reference": [
+                                                                                                {
+                                                                                                  "type": 51,
+                                                                                                  "text": "t"
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
                                                         }
                                                       ]
                                                     }
@@ -265,70 +301,34 @@
                                               ]
                                             }
                                           ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "statement": [
-                        {
-                          "assignment": [
-                            {
-                              "reference": [
-                                {
-                                  "type": 51,
-                                  "text": "x"
-                                }
-                              ]
-                            },
-                            {
-                              "type": 3,
-                              "text": ":\u003d"
-                            },
-                            {
-                              "expression": [
-                                {
-                                  "relation": [
-                                    {
-                                      "factor": [
-                                        {
-                                          "term": [
-                                            {
-                                              "unary": [
-                                                {
-                                                  "reference": [
-                                                    {
-                                                      "type": 51,
-                                                      "text": "x"
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            }
-                                          ]
                                         },
                                         {
-                                          "type": 25,
-                                          "text": "-"
+                                          "type": 2,
+                                          "text": ","
                                         },
                                         {
-                                          "term": [
+                                          "expression": [
                                             {
-                                              "unary": [
+                                              "relation": [
                                                 {
-                                                  "primary": [
+                                                  "factor": [
                                                     {
-                                                      "literal": [
+                                                      "term": [
                                                         {
-                                                          "type": 47,
-                                                          "text": "1"
+                                                          "unary": [
+                                                            {
+                                                              "primary": [
+                                                                {
+                                                                  "literal": [
+                                                                    {
+                                                                      "type": 47,
+                                                                      "text": "2"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
                                                         }
                                                       ]
                                                     }
@@ -337,6 +337,10 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        {
+                                          "type": 31,
+                                          "text": ")"
                                         }
                                       ]
                                     }
@@ -349,10 +353,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": 7,
-                  "text": "end"
                 }
               ]
             }

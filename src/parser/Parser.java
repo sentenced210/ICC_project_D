@@ -42,23 +42,33 @@ public class Parser {
                 }
                 return new PrintFunction(exps);
             }
-            case "if_statement" : {
+            case "if_statement": {
                 Expression condition = parseExpression(tree.getChild(1));
                 System.out.println("BODY");
                 Body body = parseBody(tree.getChild(3));
                 Body elseBody = tree.getChildCount() > 5 ? parseBody(tree.getChild(5)) : null;
                 return new IFStatement(condition, body, elseBody);
             }
-            case "while_loop" : {
+            case "while_loop": {
                 Expression condition = parseExpression(tree.getChild(1));
                 System.out.println("BODY");
                 Body body = parseBody(tree.getChild(3));
                 return new WhileLoop(condition, body);
             }
-            case "assignment" : {
+            case "for_loop": {
+                final String varName = tree.getChild(1).getText();
+                Expression left = parseExpression(tree.getChild(3));
+                Expression right = parseExpression(tree.getChild(5));
+                Body body = parseBody(tree.getChild(7));
+                return new ForLoop(varName, left, right, body);
+            }
+            case "assignment": {
                 String varName = tree.getChild(0).getChild(0).getText();
                 Expression exp = parseExpression(tree.getChild(2));
                 return new Assignment(varName, exp);
+            }
+            case "return_statement": {
+                return new ReturnStatement(tree.getChildCount() == 1 ? null : parseExpression(tree.getChild(1)));
             }
             default:
                 return new Declaration("nothing", new Empty());
@@ -190,7 +200,7 @@ public class Parser {
                     }
                 }
             }
-            case 3:{
+            case 3: {
                 return new Empty();
             }
         }
@@ -200,7 +210,24 @@ public class Parser {
     private Expression parseReference(ParseTree tree) {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
-        return new Reference(tree.getChild(0).getText());
+        if (tree.getChildCount() == 1) {
+            return new IDENT(tree.getChild(0).getText());
+        }
+        else {
+            switch (tree.getChild(1).getText()) {
+                case "[": {
+                    return new ArrayReference(parseReference(tree.getChild(0)), parseExpression(tree.getChild(2)));
+                }
+                case "(": {
+                    ArrayList<Expression> exps = new ArrayList<>();
+                    for (int i = 2; i < tree.getChildCount(); i += 2) {
+                        exps.add(parseExpression(tree.getChild(i)));
+                    }
+                    return new FunctionReference(parseReference(tree.getChild(0)), exps);
+                }
+            }
+        }
+        return new Empty();
     }
 
     private Expression parsePrimary(ParseTree tree) {
@@ -210,7 +237,6 @@ public class Parser {
             case 1: {
                 switch (tree.getChild(0).getClass().getSimpleName().replaceAll("Context$", "").toLowerCase()) {
                     case "literal": {
-                        System.out.println("LITERAL");
                         return parseLiteral(tree.getChild(0));
                     }
                     case "read_int": {
@@ -222,6 +248,9 @@ public class Parser {
                     case "read_string": {
                         return new ReadString();
                     }
+                    case "function_literal":{
+                        return parseFunctionLiteral(tree.getChild(0));
+                    }
                 }
             }
             case 3: {
@@ -231,11 +260,26 @@ public class Parser {
         return new Empty();
     }
 
+    private Expression parseFunctionLiteral(ParseTree tree) {
+        String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
+        System.out.println(name);
+        ArrayList<IDENT> paramNames = new ArrayList<>();
+        for (int i = 2; i < tree.getChildCount() - 1; i += 2) {
+            paramNames.add(new IDENT(tree.getChild(i).getText()));
+        }
+        if (tree.getChild(tree.getChildCount() - 1).getChildCount() == 3) {
+            return new Function(paramNames, parseBody(tree.getChild(tree.getChildCount() - 1).getChild(1)), null);
+        } else {
+            return new Function(paramNames, null, parseExpression(tree.getChild(tree.getChildCount() - 1).getChild(1)));
+        }
+    }
+
     private Expression parseLiteral(ParseTree tree) {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
-        tree = tree.getChild(0);
-        if (tree instanceof TerminalNodeImpl) {
+
+        if (tree.getChild(0) instanceof TerminalNodeImpl) {
+            tree = tree.getChild(0);
             Token token = ((TerminalNodeImpl) tree).getSymbol();
             switch (token.getType()) {
                 case DLexer.INTEGER: {
@@ -254,7 +298,25 @@ public class Parser {
                 }
             }
         } else {
-            return new Empty();
+            switch (tree.getChild(0).getClass().getSimpleName().replaceAll("Context$", "").toLowerCase()) {
+                case "array": {
+                    return parseArray(tree.getChild(0));
+                }
+                case "tuple": {
+                    System.out.println("TUPLE");
+                }
+            }
         }
+        return new Empty();
+    }
+
+    private Expression parseArray(ParseTree tree) {
+        String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
+        System.out.println(name);
+        ArrayList<Expression> exps = new ArrayList<>();
+        for (int i = 1; i < tree.getChildCount() - 1; i += 2) {
+            exps.add(parseExpression(tree.getChild(i)));
+        }
+        return new Array(exps);
     }
 }

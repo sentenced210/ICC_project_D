@@ -7,6 +7,10 @@ public class IntegerValue extends Value {
         this.value = value;
     }
 
+    public int getValue() {
+        return value;
+    }
+
     @Override
     public Value add(Value v2) {
         return new IntegerValue(value + ((IntegerValue) v2).value);

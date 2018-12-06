@@ -1,9 +1,5 @@
-var x := 3
-var y := 3
-
-x := y
-
-while x > 0 loop
-    print "YES"
-    x := x - 1
+var a := func(x, y) is
+    return x(y)
 end
+
+print a(func(t) => t * t, 2)

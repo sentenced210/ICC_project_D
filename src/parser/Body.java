@@ -1,6 +1,8 @@
 package parser;
 
 import scope.Scope;
+import types.EmptyValue;
+import types.Value;
 
 import java.util.ArrayList;
 
@@ -15,9 +17,14 @@ public class Body {
         statements.add(s);
     }
 
-    public void execute(Scope scope) throws Exception {
+    public Value execute(Scope scope) throws Exception {
         for (Statement s : statements) {
-            s.execute(scope);
+            if (s instanceof ReturnStatement) {
+                return s.execute(scope);
+            } else {
+                s.execute(scope);
+            }
         }
+        return new EmptyValue();
     }
 }
