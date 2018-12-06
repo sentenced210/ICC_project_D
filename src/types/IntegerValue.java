@@ -19,7 +19,7 @@ public class IntegerValue extends Value {
 
     @Override
     public Value subtract(Value v2) throws Exception {
-        return new IntegerValue(value / ((IntegerValue) v2).value);
+        return new IntegerValue(value - ((IntegerValue) v2).value);
     }
 
     @Override
@@ -35,5 +35,50 @@ public class IntegerValue extends Value {
     @Override
     public Value less(Value v2) {
         return new BooleanValue(value < ((IntegerValue) v2).value);
+    }
+
+    @Override
+    public Value xor(Value v2) throws Exception {
+        throw new Exception("Incorrent operation: (integer) xor (value)");
+    }
+
+    @Override
+    public Value and(Value v2) throws Exception {
+        throw new Exception("Incorrent operation: (integer) and (value)");
+    }
+
+    @Override
+    public Value or(Value v2) throws Exception {
+        throw new Exception("Incorrent operation: (integer) or (value)");
+    }
+
+    @Override
+    public Value not() throws Exception {
+        throw new Exception("Incorrent operation: not (integer)");
+    }
+
+    @Override
+    public Value lessOrEqual(Value v2) throws Exception {
+        return new BooleanValue(value <= ((IntegerValue) v2).value);
+    }
+
+    @Override
+    public Value greaterOrEqual(Value v2) throws Exception {
+        return new BooleanValue(value >= ((IntegerValue) v2).value);
+    }
+
+    @Override
+    public Value notEqual(Value v2) throws Exception {
+        return new BooleanValue(value != ((IntegerValue) v2).value);
+    }
+
+    @Override
+    public Value divide(Value v2) throws Exception {
+        return new IntegerValue(value / ((IntegerValue) v2).value);
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
     }
 }

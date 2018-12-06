@@ -11,7 +11,9 @@ import d_grammar.DParser;
 import java.io.File;
 import java.io.PrintWriter;
 
+import parser.Body;
 import parser.Parser;
+import scope.Scope;
 
 public class Main {
 
@@ -34,7 +36,9 @@ public class Main {
         pw.close();
 
         Parser p = new Parser(tree);
-        p.parse();
+        Body b = p.parse();
+        Scope scope = new Scope();
+        b.execute(scope);
     }
 
 }

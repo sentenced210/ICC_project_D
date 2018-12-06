@@ -47,8 +47,8 @@ public class DParser extends Parser {
 		"'for'", "'in'", "'..'", "'loop'", "'return'", "'print'", "'or'", "'and'", 
 		"'xor'", "'<'", "'<='", "'>='", "'>'", "'='", "'/='", "'+'", "'-'", "'*'", 
 		"'/'", "'is'", "'not'", "'('", "')'", "'int'", "'real'", "'bool'", "'string'", 
-		"'empty'", "'['", "']'", "'{'", "'}'", "'func'", "'@int'", "'@real'", 
-		"'@string'", "'=>'", "'.'"
+		"'empty'", "'['", "']'", "'{'", "'}'", "'func'", "'readInt'", "'readReal'", 
+		"'readString'", "'=>'", "'.'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, null, null, null, null, null, null, null, null, null, null, null, 

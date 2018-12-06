@@ -92,8 +92,8 @@ WS=53
 '{'=39
 '}'=40
 'func'=41
-'@int'=42
-'@real'=43
-'@string'=44
+'readInt'=42
+'readReal'=43
+'readString'=44
 '=>'=45
 '.'=46

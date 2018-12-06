@@ -6,7 +6,6 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
 import scope.Scope;
 import types.IntegerValue;
-import types.Types;
 
 public class ScopeChecker {
     private Scope sc;

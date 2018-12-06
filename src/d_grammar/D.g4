@@ -52,11 +52,11 @@ type_indicator : 'int' | 'real' | 'bool' | 'string'
     | '{' '}'
     | 'func';
 
-read_int : '@int';
+read_int : 'readInt';
 
-read_real : '@real';
+read_real : 'readReal';
 
-read_string : '@string';
+read_string : 'readString';
 
 function_literal : 'func' ('('IDENT (',' IDENT)* ')')? function_body;
 

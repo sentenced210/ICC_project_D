@@ -13,6 +13,7 @@ public class Scope {
     public Scope() {
         globalVariables = new HashMap<>();
         localVariables = new Stack<>();
+        localVariables.push(new HashSet<>());
     }
 
     public void newScope() {
@@ -48,5 +49,9 @@ public class Scope {
     public void setValue(String name, Value value) {
         globalVariables.get(name).pop();
         globalVariables.get(name).push(value);
+    }
+
+    public Value getValue(String name) {
+        return globalVariables.get(name).peek();
     }
 }

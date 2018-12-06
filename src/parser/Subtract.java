@@ -3,12 +3,10 @@ package parser;
 import scope.Scope;
 import types.Value;
 
-import java.math.BigInteger;
-
 public class Subtract extends Term {
-    Expression left, right;
+    private Expression left, right;
 
-    Subtract(Expression left, Expression right) {
+    public Subtract(Expression left, Expression right) {
         this.left = left;
         this.right = right;
     }

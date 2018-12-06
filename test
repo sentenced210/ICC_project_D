@@ -1,1 +1,4 @@
-var x := 1
+var x := (1 + 3)
+var y := readInt
+
+print x, x + x, x + y

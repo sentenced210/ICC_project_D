@@ -1,5 +1,7 @@
 package parser;
 
+import scope.Scope;
+
 import java.util.ArrayList;
 
 public class Body {
@@ -11,5 +13,11 @@ public class Body {
 
     public void add(Statement s) {
         statements.add(s);
+    }
+
+    public void execute(Scope scope) throws Exception {
+        for (Statement s : statements) {
+            s.execute(scope);
+        }
     }
 }

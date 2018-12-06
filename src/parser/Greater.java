@@ -1,11 +1,10 @@
 package parser;
 
 import scope.Scope;
-import types.IntegerValue;
 import types.Value;
 
 
-public class Greater extends Relation {
+public class Greater extends Factor {
     Expression left, right;
 
     Greater(Expression left, Expression right) {

@@ -3,9 +3,7 @@ package parser;
 import scope.Scope;
 import types.Value;
 
-import java.math.BigInteger;
-
-public class Less extends Relation {
+public class Less extends Factor {
     Expression left, right;
 
     Less(Expression left, Expression right) {

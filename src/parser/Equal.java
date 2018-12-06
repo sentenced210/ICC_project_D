@@ -3,10 +3,10 @@ package parser;
 import scope.Scope;
 import types.Value;
 
-public class Equal extends Relation {
-    Expression left, right;
+public class Equal extends Factor {
+    private Expression left, right;
 
-    Equal(Expression left, Expression right) {
+    public Equal(Expression left, Expression right) {
         this.left = left;
         this.right = right;
     }

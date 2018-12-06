@@ -5,7 +5,15 @@ public abstract class Value {
     public abstract Value add(Value v2) throws Exception;
     public abstract Value multiply(Value v2) throws Exception;
     public abstract Value subtract(Value v2) throws Exception;
+    public abstract Value divide(Value v2) throws Exception;
+    public abstract Value xor(Value v2) throws Exception;
+    public abstract Value and(Value v2) throws Exception;
+    public abstract Value or(Value v2) throws Exception;
+    public abstract Value not() throws Exception;
     public abstract Value equal(Value v2) throws Exception;
     public abstract Value greater(Value v2) throws Exception;
     public abstract Value less(Value v2) throws Exception;
+    public abstract Value lessOrEqual(Value v2) throws Exception;
+    public abstract Value greaterOrEqual(Value v2) throws Exception;
+    public abstract Value notEqual(Value v2) throws Exception;
 }
