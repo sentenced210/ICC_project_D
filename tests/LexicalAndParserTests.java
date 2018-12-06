@@ -100,8 +100,8 @@ public class LexicalAndParserTests {
     @Test
     public void normalGrammar4(){
         CharStream stream = CharStreams.fromString("var x := 1.0;\n"
-                + "if x is int then \n"
-                +"print x + ");
+                + "if x is real then \n"
+                +"print x + 1.0 end");
 
         DLexer lexer = new DLexer(stream);
 
@@ -125,5 +125,7 @@ public class LexicalAndParserTests {
 
         Assert.assertEquals("OK", assertMessage);
     }
+
+
 
 }
