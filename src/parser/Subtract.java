@@ -1,5 +1,6 @@
 package parser;
 
+import scope.Scope;
 import types.Value;
 
 import java.math.BigInteger;
@@ -13,7 +14,7 @@ public class Subtract extends Term {
     }
 
     @Override
-    public Value calculate() throws Exception {
-        return left.calculate().subtract(right.calculate());
+    public Value calculate(Scope scope) throws Exception {
+        return left.calculate(scope).subtract(right.calculate(scope));
     }
 }

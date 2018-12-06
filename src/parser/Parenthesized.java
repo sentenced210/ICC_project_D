@@ -1,5 +1,6 @@
 package parser;
 
+import scope.Scope;
 import types.Value;
 
 public class Parenthesized extends Primary {
@@ -10,7 +11,7 @@ public class Parenthesized extends Primary {
     }
 
     @Override
-    public Value calculate() throws Exception {
-        return exp.calculate();
+    public Value calculate(Scope scope) throws Exception {
+        return exp.calculate(scope);
     }
 }

@@ -1,5 +1,6 @@
 package parser;
 
+import scope.Scope;
 import types.Value;
 
 public class Equal extends Relation {
@@ -11,7 +12,7 @@ public class Equal extends Relation {
     }
 
     @Override
-    public Value calculate() throws Exception {
-        return left.calculate().equal(right.calculate());
+    public Value calculate(Scope scope) throws Exception {
+        return left.calculate(scope).equal(right.calculate(scope));
     }
 }

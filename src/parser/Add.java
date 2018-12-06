@@ -1,6 +1,6 @@
 package parser;
 
-import types.IntegerValue;
+import scope.Scope;
 import types.Value;
 
 
@@ -13,7 +13,7 @@ public class Add extends Term {
     }
 
     @Override
-    public Value calculate() throws Exception {
-        return left.calculate().add(right.calculate());
+    public Value calculate(Scope scope) throws Exception {
+        return left.calculate(scope).add(right.calculate(scope));
     }
 }

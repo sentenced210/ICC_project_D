@@ -4,12 +4,16 @@ import d_grammar.DLexer;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
+import scope.Scope;
+import types.EmptyValue;
 
 public class Parser {
     private ParseTree tree;
+    private Scope scope;
 
     public Parser(ParseTree tree) {
         this.tree = tree;
+        scope = new Scope();
     }
 
     public Body parse() {
@@ -39,7 +43,10 @@ public class Parser {
             System.out.println(name);
             switch (name) {
                 case "declaration": {
+                    scope.newVariable(name, new EmptyValue());
+                    if (tree.getChildCount() > 2) {
 
+                    }
                 }
             }
         }

@@ -1,5 +1,6 @@
 package parser;
 
+import scope.Scope;
 import types.IntegerValue;
 import types.Value;
 
@@ -11,7 +12,7 @@ public class Integer extends Literal {
     }
 
     @Override
-    public Value calculate() {
+    public Value calculate(Scope scope) {
         return new IntegerValue(value);
     }
 }

@@ -1,5 +1,6 @@
 package parser;
 
+import scope.Scope;
 import types.IntegerValue;
 import types.Value;
 
@@ -13,7 +14,7 @@ public class Greater extends Relation {
     }
 
     @Override
-    public Value calculate() throws Exception {
-        return left.calculate().greater(right.calculate());
+    public Value calculate(Scope scope) throws Exception {
+        return left.calculate(scope).greater(right.calculate(scope));
     }
 }

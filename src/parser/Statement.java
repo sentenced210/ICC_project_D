@@ -1,5 +1,8 @@
 package parser;
 
-public abstract class Statement {
+import scope.Scope;
+import types.Value;
 
+public abstract class Statement {
+    abstract Value calculate(Scope scope) throws Exception;
 }

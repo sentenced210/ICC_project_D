@@ -1,5 +1,6 @@
 package parser;
 
+import scope.Scope;
 import types.Value;
 
 import java.math.BigInteger;
@@ -13,7 +14,7 @@ public class Multiply extends Expression {
     }
 
     @Override
-    public Value calculate() throws Exception {
-        return left.calculate().multiply(right.calculate());
+    public Value calculate(Scope scope) throws Exception {
+        return left.calculate(scope).multiply(right.calculate(scope));
     }
 }
