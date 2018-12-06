@@ -78,6 +78,16 @@ public interface DListener extends ParseTreeListener {
 	 */
 	void exitIf_statement(DParser.If_statementContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link DParser#loop}.
+	 * @param ctx the parse tree
+	 */
+	void enterLoop(DParser.LoopContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DParser#loop}.
+	 * @param ctx the parse tree
+	 */
+	void exitLoop(DParser.LoopContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link DParser#while_loop}.
 	 * @param ctx the parse tree
 	 */

@@ -7,8 +7,7 @@ body : (statement)+;
 statement : declaration
     | assignment
     | if_statement
-    | for_loop
-    | while_loop
+    | loop
     | return_statement
     | print;
 
@@ -19,6 +18,8 @@ var_definition : IDENT (':=' expression)?;
 assignment : reference ':=' expression;
 
 if_statement : 'if' expression 'then' body ('else' body)? 'end';
+
+loop : while_loop | for_loop;
 
 while_loop : 'while' expression 'then' body 'end';
 

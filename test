@@ -1,11 +1,1 @@
 var x := 1
-var s := "Hello"
-
-var tmp := x + s
-
-if s = "Hello" then
-    s := 2
-    var t := 2
-end
-
-t := 3
