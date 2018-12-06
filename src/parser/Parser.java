@@ -4,15 +4,12 @@ import d_grammar.DLexer;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
-import scope.Scope;
 
 public class Parser {
     private ParseTree tree;
-    private Scope scope;
 
     public Parser(ParseTree tree) {
         this.tree = tree;
-        scope = new Scope();
     }
 
     public Body parse() {
@@ -55,7 +52,7 @@ public class Parser {
             String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
             System.out.println(name);
             switch (name) {
-                
+
             }
         }
         return new Empty();
