@@ -57,13 +57,9 @@ public class Parser {
             String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
             System.out.println(name);
             switch (name) {
-                case "declaration": {
-                    scope.newVariable(name, new EmptyValue());
-                    if (tree.getChildCount() > 2) {
 
-                    }
-                }
             }
         }
+        return new Empty();
     }
 }
