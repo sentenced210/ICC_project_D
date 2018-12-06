@@ -33,68 +33,12 @@
                                         {
                                           "primary": [
                                             {
-                                              "type": 30,
-                                              "text": "("
-                                            },
-                                            {
-                                              "expression": [
+                                              "literal": [
                                                 {
-                                                  "relation": [
-                                                    {
-                                                      "factor": [
-                                                        {
-                                                          "term": [
-                                                            {
-                                                              "unary": [
-                                                                {
-                                                                  "primary": [
-                                                                    {
-                                                                      "literal": [
-                                                                        {
-                                                                          "type": 47,
-                                                                          "text": "1"
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  ]
-                                                                }
-                                                              ]
-                                                            }
-                                                          ]
-                                                        },
-                                                        {
-                                                          "type": 24,
-                                                          "text": "+"
-                                                        },
-                                                        {
-                                                          "term": [
-                                                            {
-                                                              "unary": [
-                                                                {
-                                                                  "primary": [
-                                                                    {
-                                                                      "literal": [
-                                                                        {
-                                                                          "type": 47,
-                                                                          "text": "3"
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  ]
-                                                                }
-                                                              ]
-                                                            }
-                                                          ]
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
+                                                  "type": 47,
+                                                  "text": "3"
                                                 }
                                               ]
-                                            },
-                                            {
-                                              "type": 31,
-                                              "text": ")"
                                             }
                                           ]
                                         }
@@ -173,10 +117,58 @@
         {
           "statement": [
             {
-              "if_statement": [
+              "assignment": [
                 {
-                  "type": 4,
-                  "text": "if"
+                  "reference": [
+                    {
+                      "type": 51,
+                      "text": "x"
+                    }
+                  ]
+                },
+                {
+                  "type": 3,
+                  "text": ":\u003d"
+                },
+                {
+                  "expression": [
+                    {
+                      "relation": [
+                        {
+                          "factor": [
+                            {
+                              "term": [
+                                {
+                                  "unary": [
+                                    {
+                                      "reference": [
+                                        {
+                                          "type": 51,
+                                          "text": "y"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "statement": [
+            {
+              "while_loop": [
+                {
+                  "type": 8,
+                  "text": "while"
                 },
                 {
                   "expression": [
@@ -203,8 +195,8 @@
                           ]
                         },
                         {
-                          "type": 22,
-                          "text": "\u003d"
+                          "type": 21,
+                          "text": "\u003e"
                         },
                         {
                           "factor": [
@@ -213,10 +205,14 @@
                                 {
                                   "unary": [
                                     {
-                                      "reference": [
+                                      "primary": [
                                         {
-                                          "type": 51,
-                                          "text": "y"
+                                          "literal": [
+                                            {
+                                              "type": 47,
+                                              "text": "0"
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
@@ -231,8 +227,8 @@
                   ]
                 },
                 {
-                  "type": 5,
-                  "text": "then"
+                  "type": 9,
+                  "text": "loop"
                 },
                 {
                   "body": [
@@ -279,22 +275,22 @@
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": 6,
-                  "text": "else"
-                },
-                {
-                  "body": [
+                    },
                     {
                       "statement": [
                         {
-                          "print": [
+                          "assignment": [
                             {
-                              "type": 14,
-                              "text": "print"
+                              "reference": [
+                                {
+                                  "type": 51,
+                                  "text": "x"
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ":\u003d"
                             },
                             {
                               "expression": [
@@ -307,12 +303,32 @@
                                             {
                                               "unary": [
                                                 {
+                                                  "reference": [
+                                                    {
+                                                      "type": 51,
+                                                      "text": "x"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": 25,
+                                          "text": "-"
+                                        },
+                                        {
+                                          "term": [
+                                            {
+                                              "unary": [
+                                                {
                                                   "primary": [
                                                     {
                                                       "literal": [
                                                         {
-                                                          "type": 49,
-                                                          "text": "\"NO\""
+                                                          "type": 47,
+                                                          "text": "1"
                                                         }
                                                       ]
                                                     }

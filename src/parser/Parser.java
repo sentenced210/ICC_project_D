@@ -49,6 +49,17 @@ public class Parser {
                 Body elseBody = tree.getChildCount() > 5 ? parseBody(tree.getChild(5)) : null;
                 return new IFStatement(condition, body, elseBody);
             }
+            case "while_loop" : {
+                Expression condition = parseExpression(tree.getChild(1));
+                System.out.println("BODY");
+                Body body = parseBody(tree.getChild(3));
+                return new WhileLoop(condition, body);
+            }
+            case "assignment" : {
+                String varName = tree.getChild(0).getChild(0).getText();
+                Expression exp = parseExpression(tree.getChild(2));
+                return new Assignment(varName, exp);
+            }
             default:
                 return new Declaration("nothing", new Empty());
         }
