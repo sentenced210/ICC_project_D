@@ -11,8 +11,6 @@ import d_grammar.DParser;
 
 import java.io.File;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.util.Scanner;
 
 import parser.Body;
 import parser.Parser;

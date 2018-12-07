@@ -1,7 +1,6 @@
 package types;
 
 import parser.Expression;
-import parser.Integer;
 
 import java.util.HashMap;
 
