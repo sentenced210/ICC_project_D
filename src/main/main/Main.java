@@ -45,12 +45,32 @@ public class Main {
         pw.write(s);
         pw.close();
 
-        ScopeChecker sc = new ScopeChecker();
-        sc.check(tree);
 
+        ScopeChecker sc = new ScopeChecker();
+
+        String assertMessage = "OK";
+        try {
+            sc.check(tree);
+        } catch (Exception e) {
+            assertMessage = e.getMessage();
+        }
         Parser p = new Parser(tree);
-        Body b = p.parse();
-        b.execute(new Scope());
+
+        Body b = null;
+
+        try {
+            b = p.parse();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Scope scope = new Scope();
+
+        try {
+            b.execute(scope);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
