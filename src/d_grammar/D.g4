@@ -65,7 +65,7 @@ function_body : 'is' body 'end'
 reference : IDENT
     | reference '[' expression ']'
     | reference '(' expression (',' expression)* ')'
-    | reference '.' IDENT;
+    | reference '.' (IDENT | INTEGER);
 
 literal : INTEGER
     | REAL

@@ -36,7 +36,7 @@
                                               "literal": [
                                                 {
                                                   "type": 47,
-                                                  "text": "3"
+                                                  "text": "20"
                                                 }
                                               ]
                                             }
@@ -333,6 +333,58 @@
                                         {
                                           "type": 51,
                                           "text": "b"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "statement": [
+            {
+              "print": [
+                {
+                  "type": 14,
+                  "text": "print"
+                },
+                {
+                  "expression": [
+                    {
+                      "relation": [
+                        {
+                          "factor": [
+                            {
+                              "term": [
+                                {
+                                  "unary": [
+                                    {
+                                      "reference": [
+                                        {
+                                          "reference": [
+                                            {
+                                              "type": 51,
+                                              "text": "x"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": 46,
+                                          "text": "."
+                                        },
+                                        {
+                                          "type": 47,
+                                          "text": "4"
                                         }
                                       ]
                                     }

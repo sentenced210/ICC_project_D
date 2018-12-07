@@ -51,6 +51,7 @@ BOOLEAN=50
 IDENT=51
 Comment=52
 WS=53
+ErrorCharacter=54
 'var'=1
 ','=2
 ':='=3

@@ -47,8 +47,8 @@ public class Main {
         pw.write(s);
         pw.close();
 
-//        ScopeChecker sc = new ScopeChecker();
-//        sc.check(tree);
+        ScopeChecker sc = new ScopeChecker();
+        sc.check(tree);
 
         Parser p = new Parser(tree);
         Body b = p.parse();
