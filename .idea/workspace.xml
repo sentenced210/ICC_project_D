@@ -4,17 +4,9 @@
     <list default="true" id="1dc51381-8b9c-4045-8a13-626597ec7098" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Assignment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/parser/Reference.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/parser/Reference.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/scope/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/scope/Scope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/ArrayValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/ArrayValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/IntegerValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/IntegerValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Reference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/ArrayValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ArrayValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/IntegerValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/IntegerValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/compilers/types/TupleValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/compilers/types/TupleValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Tuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/TupleValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/TupleValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,7 +21,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="g4" value="2" />
-          <entry key="java" value="40" />
+          <entry key="java" value="52" />
           <entry key="json" value="2" />
           <entry key="test" value="2" />
           <entry key="xml" value="1" />
@@ -38,7 +30,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ANTLR v4 grammar file" value="2" />
-          <entry key="JAVA" value="40" />
+          <entry key="JAVA" value="52" />
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
@@ -47,15 +39,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="g4" value="7" />
-          <entry key="java" value="3400" />
-          <entry key="test" value="995" />
+          <entry key="java" value="4434" />
+          <entry key="test" value="1517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ANTLR v4 grammar file" value="7" />
-          <entry key="JAVA" value="3400" />
-          <entry key="PLAIN_TEXT" value="995" />
+          <entry key="JAVA" value="4434" />
+          <entry key="PLAIN_TEXT" value="1517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -70,45 +62,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="374">
+              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Reference.java">
+        <entry file="file://$PROJECT_DIR$/src/parser/Body.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/types/ArrayValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/ArrayReference.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state relative-caret-position="273">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,33 +84,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/IFStatement.java">
+        <entry file="file://$PROJECT_DIR$/src/main/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/IDENT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+            <state relative-caret-position="414">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/Assignment.java">
+        <entry file="file://$PROJECT_DIR$/src/parser/ForLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="363">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/parser/FunctionReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,28 +119,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/Value.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state>
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ast.json">
+        <entry file="file://$PROJECT_DIR$/src/types/ArrayValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="228" column="17" selection-start-line="228" selection-start-column="17" selection-end-line="228" selection-end-column="17" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/types/TupleValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#3494#3495#0" expanded="true" />
+                <element signature="e#3524#3525#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/parser/Tuple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/parser/IDENT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,16 +215,18 @@
         <option value="$PROJECT_DIR$/src/types/FunctionValue.java" />
         <option value="$PROJECT_DIR$/src/types/RealValue.java" />
         <option value="$PROJECT_DIR$/src/types/StringValue.java" />
-        <option value="$PROJECT_DIR$/src/types/TupleValue.java" />
         <option value="$PROJECT_DIR$/src/scope/Scope.java" />
-        <option value="$PROJECT_DIR$/src/types/ArrayValue.java" />
         <option value="$PROJECT_DIR$/src/types/IntegerValue.java" />
-        <option value="$PROJECT_DIR$/test" />
-        <option value="$PROJECT_DIR$/src/types/Value.java" />
-        <option value="$PROJECT_DIR$/src/parser/ArrayReference.java" />
         <option value="$PROJECT_DIR$/src/parser/Reference.java" />
-        <option value="$PROJECT_DIR$/src/parser/Assignment.java" />
         <option value="$PROJECT_DIR$/src/parser/Parser.java" />
+        <option value="$PROJECT_DIR$/src/types/ArrayValue.java" />
+        <option value="$PROJECT_DIR$/src/types/Value.java" />
+        <option value="$PROJECT_DIR$/src/parser/Assignment.java" />
+        <option value="$PROJECT_DIR$/src/parser/ArrayReference.java" />
+        <option value="$PROJECT_DIR$/src/parser/Expression.java" />
+        <option value="$PROJECT_DIR$/src/parser/Tuple.java" />
+        <option value="$PROJECT_DIR$/src/types/TupleValue.java" />
+        <option value="$PROJECT_DIR$/test" />
       </list>
     </option>
   </component>
@@ -311,7 +318,7 @@
     <property name="$PROJECT_DIR$/src/d_grammar/D.g4::/package" value="d_grammar" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544180923974" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544185373109" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -367,12 +374,12 @@
       <workItem from="1544141506363" duration="7731000" />
       <workItem from="1544149464740" duration="578000" />
       <workItem from="1544150072598" duration="101000" />
-      <workItem from="1544150469606" duration="9139000" />
+      <workItem from="1544150469606" duration="12581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11137000" />
+    <option name="totallyTimeSpent" value="14579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -457,30 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Tuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/PrintFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/FunctionReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -498,32 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Boolean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,22 +519,6 @@
           <folding>
             <element signature="e#2162#2163#0" expanded="true" />
             <element signature="e#2189#2190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/TupleValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="100" column="60" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,60 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ast.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="228" column="17" selection-start-line="228" selection-start-column="17" selection-end-line="228" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/IDENT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/ArrayValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/ArrayReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,6 +626,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Assignment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -734,20 +643,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/Value.java">
+    <entry file="file://$PROJECT_DIR$/src/parser/ArrayReference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ast.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1751">
+          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/IDENT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/ArrayValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Tuple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/TupleValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
+            <element signature="e#3524#3525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/FunctionReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/ForLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
         </state>
       </provider>
     </entry>

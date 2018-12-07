@@ -4,13 +4,17 @@ import parser.Expression;
 import parser.IDENT;
 import parser.Tuple;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TupleValue extends Value {
     private HashMap<IDENT, Expression> identToExp;
+    private ArrayList<IDENT> idents;
+    private ArrayList<Expression> exps;
 
-    public TupleValue(HashMap<IDENT, Expression> identToExp) {
+    public TupleValue(HashMap<IDENT, Expression> identToExp, ArrayList<IDENT> idents) {
         this.identToExp = identToExp;
+        this.idents = idents;
     }
 
     public Expression getElement(IDENT key) {
@@ -20,18 +24,18 @@ public class TupleValue extends Value {
     @Override
     public Value add(Value v2) throws Exception {
         if (v2 instanceof TupleValue) {
-            HashMap<IDENT, Expression> tmp = new HashMap<>();
-            for (IDENT x : identToExp.keySet()) {
-                tmp.put(x, identToExp.get(x));
-            }
-            int cnt = tmp.size();
-            for (IDENT x : ((TupleValue) v2).identToExp.keySet()) {
-                if (!tmp.containsKey(x)) {
+            HashMap<IDENT, Expression> tmp1 = new HashMap<>();
+            ArrayList<IDENT> tmp2 = idents;
+            tmp2.addAll(((TupleValue) v2).idents);
+            int cnt = 0;
+            for (IDENT x : tmp2) {
+                if (!tmp1.containsKey(x)) {
                     cnt++;
                 }
-                tmp.put(new IDENT(String.valueOf(cnt)), identToExp.get(x));
+                tmp1.put(x, ((TupleValue) v2).identToExp.get(x));
+                tmp1.put(new IDENT(String.valueOf(cnt)), ((TupleValue) v2).identToExp.get(x));
             }
-            return new TupleValue(tmp);
+            return new TupleValue(tmp1, tmp2);
         }
         throw new Exception("Incorrect operation: (tuple) + (" + v2.getType() + ")");
     }
