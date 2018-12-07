@@ -5,4 +5,8 @@ var fib := func(x) is
     return fib(x - 1) + fib(x - 2)
 end
 
-print fib(0)
+var i := 1
+for i in 1 .. 10 loop
+    print fib(i)
+    i := i + 1
+end
