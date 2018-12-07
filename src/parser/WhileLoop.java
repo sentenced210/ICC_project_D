@@ -14,14 +14,17 @@ public class WhileLoop extends Statement {
         this.body = body;
     }
 
+    private boolean check(Scope scope) throws Exception {
+        Value execLoop = cond.calculate(scope);
+        return (execLoop instanceof BooleanValue) && ((BooleanValue) execLoop).getValue();
+    }
+
     @Override
     Value execute(Scope scope) throws Exception {
-        Value execLoop = cond.calculate(scope);
-        while ((execLoop instanceof BooleanValue) && ((BooleanValue) execLoop).getValue()) {
+        while (check(scope)) {
             scope.newScope();
             body.execute(scope);
             scope.endOfScope();
-            execLoop = cond.calculate(scope);
         }
         return new EmptyValue();
     }
