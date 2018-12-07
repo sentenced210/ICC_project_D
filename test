@@ -1,4 +1,5 @@
-var d := 3
+var d := 20
 
 var x := {a := 1, b := 3, c := 2, d}
 print x.b
+print x.4
