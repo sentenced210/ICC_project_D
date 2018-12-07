@@ -16,4 +16,5 @@ public abstract class Value {
     public abstract Value lessOrEqual(Value v2) throws Exception;
     public abstract Value greaterOrEqual(Value v2) throws Exception;
     public abstract Value notEqual(Value v2) throws Exception;
+    public abstract String getType();
 }

@@ -207,7 +207,8 @@ public class Parser {
 
     private Expression parseReference(ParseTree tree, Body parentBody) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
-        // System.out.println(name);
+        System.out.println(name);
+        System.out.println(tree.getChildCount());
         if (tree.getChildCount() == 1) {
             return new IDENT(tree.getChild(0).getText());
         }

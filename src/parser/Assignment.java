@@ -15,6 +15,7 @@ public class Assignment extends Statement {
 
     @Override
     Value execute(Scope scope) throws Exception {
+        System.out.println(varName);
         scope.setValue(varName, exp.calculate(scope));
         return new EmptyValue();
     }
