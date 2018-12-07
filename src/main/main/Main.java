@@ -50,8 +50,7 @@ public class Main {
 
         Parser p = new Parser(tree);
         Body b = p.parse();
-        Scope scope = new Scope();
-        b.execute(scope);
+        b.execute(new Scope());
     }
 
 }

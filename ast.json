@@ -91,8 +91,8 @@
                                                                           ]
                                                                         },
                                                                         {
-                                                                          "type": 18,
-                                                                          "text": "\u003c"
+                                                                          "type": 19,
+                                                                          "text": "\u003c\u003d"
                                                                         },
                                                                         {
                                                                           "factor": [
@@ -446,7 +446,7 @@
                                                                   "literal": [
                                                                     {
                                                                       "type": 47,
-                                                                      "text": "4"
+                                                                      "text": "0"
                                                                     }
                                                                   ]
                                                                 }

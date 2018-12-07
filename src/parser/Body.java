@@ -1,8 +1,8 @@
 package parser;
 
-import scope.Scope;
 import types.EmptyValue;
 import types.Value;
+import scope.Scope;
 
 import java.util.ArrayList;
 
