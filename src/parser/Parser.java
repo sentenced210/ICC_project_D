@@ -207,15 +207,14 @@ public class Parser {
 
     private Expression parseReference(ParseTree tree, Body parentBody) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
-        System.out.println(name);
-        System.out.println(tree.getChildCount());
+        // System.out.println(name);
         if (tree.getChildCount() == 1) {
             return new IDENT(tree.getChild(0).getText());
         }
         else {
             switch (tree.getChild(1).getText()) {
                 case "[": {
-                    return new ArrayReference(parseReference(tree.getChild(0), parentBody), parseExpression(tree.getChild(2), parentBody));
+                    return new ArrayReference((Reference) parseReference(tree.getChild(0), parentBody), parseExpression(tree.getChild(2), parentBody));
                 }
                 case "(": {
                     ArrayList<Expression> exps = new ArrayList<>();

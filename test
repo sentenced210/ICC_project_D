@@ -2,6 +2,9 @@ var tmp := [1, 2, 3]
 
 var x := tmp
 
-tmp[2] := 1000
+var i := 1
 
-print tmp
+for i in 1 .. 3 loop
+    print tmp[i]
+    i := i + 1
+end

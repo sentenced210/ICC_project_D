@@ -15,6 +15,10 @@ public class ArrayValue extends Value {
         return expToValue.get(((IntegerValue) key).getValue());
     }
 
+    public void setElement(Value key, Expression exp) {
+        expToValue.put(((IntegerValue) key).getValue(), exp);
+    }
+
     @Override
     public Value add(Value v2) throws Exception {
         if (v2 instanceof ArrayValue) {

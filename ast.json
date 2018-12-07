@@ -225,20 +225,20 @@
         {
           "statement": [
             {
-              "assignment": [
+              "declaration": [
                 {
-                  "reference": [
+                  "type": 1,
+                  "text": "var"
+                },
+                {
+                  "var_definition": [
                     {
-                      "reference": [
-                        {
-                          "type": 51,
-                          "text": "tmp"
-                        }
-                      ]
+                      "type": 51,
+                      "text": "i"
                     },
                     {
-                      "type": 37,
-                      "text": "["
+                      "type": 3,
+                      "text": ":\u003d"
                     },
                     {
                       "expression": [
@@ -256,49 +256,9 @@
                                               "literal": [
                                                 {
                                                   "type": 47,
-                                                  "text": "2"
+                                                  "text": "1"
                                                 }
                                               ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": 38,
-                      "text": "]"
-                    }
-                  ]
-                },
-                {
-                  "type": 3,
-                  "text": ":\u003d"
-                },
-                {
-                  "expression": [
-                    {
-                      "relation": [
-                        {
-                          "factor": [
-                            {
-                              "term": [
-                                {
-                                  "unary": [
-                                    {
-                                      "primary": [
-                                        {
-                                          "literal": [
-                                            {
-                                              "type": 47,
-                                              "text": "1000"
                                             }
                                           ]
                                         }
@@ -321,10 +281,18 @@
         {
           "statement": [
             {
-              "print": [
+              "for_loop": [
                 {
-                  "type": 14,
-                  "text": "print"
+                  "type": 10,
+                  "text": "for"
+                },
+                {
+                  "type": 51,
+                  "text": "i"
+                },
+                {
+                  "type": 11,
+                  "text": "in"
                 },
                 {
                   "expression": [
@@ -337,10 +305,14 @@
                                 {
                                   "unary": [
                                     {
-                                      "reference": [
+                                      "primary": [
                                         {
-                                          "type": 51,
-                                          "text": "tmp"
+                                          "literal": [
+                                            {
+                                              "type": 47,
+                                              "text": "1"
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
@@ -353,6 +325,206 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": 12,
+                  "text": ".."
+                },
+                {
+                  "expression": [
+                    {
+                      "relation": [
+                        {
+                          "factor": [
+                            {
+                              "term": [
+                                {
+                                  "unary": [
+                                    {
+                                      "primary": [
+                                        {
+                                          "literal": [
+                                            {
+                                              "type": 47,
+                                              "text": "3"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 9,
+                  "text": "loop"
+                },
+                {
+                  "body": [
+                    {
+                      "statement": [
+                        {
+                          "print": [
+                            {
+                              "type": 14,
+                              "text": "print"
+                            },
+                            {
+                              "expression": [
+                                {
+                                  "relation": [
+                                    {
+                                      "factor": [
+                                        {
+                                          "term": [
+                                            {
+                                              "unary": [
+                                                {
+                                                  "reference": [
+                                                    {
+                                                      "reference": [
+                                                        {
+                                                          "type": 51,
+                                                          "text": "tmp"
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 37,
+                                                      "text": "["
+                                                    },
+                                                    {
+                                                      "expression": [
+                                                        {
+                                                          "relation": [
+                                                            {
+                                                              "factor": [
+                                                                {
+                                                                  "term": [
+                                                                    {
+                                                                      "unary": [
+                                                                        {
+                                                                          "reference": [
+                                                                            {
+                                                                              "type": 51,
+                                                                              "text": "i"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 38,
+                                                      "text": "]"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "statement": [
+                        {
+                          "assignment": [
+                            {
+                              "reference": [
+                                {
+                                  "type": 51,
+                                  "text": "i"
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ":\u003d"
+                            },
+                            {
+                              "expression": [
+                                {
+                                  "relation": [
+                                    {
+                                      "factor": [
+                                        {
+                                          "term": [
+                                            {
+                                              "unary": [
+                                                {
+                                                  "reference": [
+                                                    {
+                                                      "type": 51,
+                                                      "text": "i"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": 24,
+                                          "text": "+"
+                                        },
+                                        {
+                                          "term": [
+                                            {
+                                              "unary": [
+                                                {
+                                                  "primary": [
+                                                    {
+                                                      "literal": [
+                                                        {
+                                                          "type": 47,
+                                                          "text": "1"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 7,
+                  "text": "end"
                 }
               ]
             }

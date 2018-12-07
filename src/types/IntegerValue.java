@@ -11,6 +11,10 @@ public class IntegerValue extends Value {
         return value;
     }
 
+    public void setValue(int value) {
+        this.value = value;
+    }
+
     @Override
     public Value add(Value v2) throws Exception {
         if (v2 instanceof IntegerValue) {
