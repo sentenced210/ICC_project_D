@@ -18,4 +18,23 @@ public class IDENT extends Reference {
     public Value calculate(Scope scope) throws Exception {
         return scope.getValue(varName);
     }
+
+    @Override
+    public int hashCode() {
+        return varName.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return false;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        return varName.equals(((IDENT) obj).getVarName());
+    }
 }

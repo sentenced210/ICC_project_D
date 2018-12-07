@@ -14,11 +14,11 @@ public class Parser {
         this.tree = tree;
     }
 
-    public Body parse() {
+    public Body parse() throws Exception {
         return parseBody(tree.getChild(0));
     }
 
-    private Body parseBody(ParseTree tree) {
+    private Body parseBody(ParseTree tree) throws Exception {
         Body b = new Body();
         for (int i = 0; i < tree.getChildCount(); i++) {
             b.add(parseStatement(tree.getChild(i).getChild(0)));
@@ -26,7 +26,7 @@ public class Parser {
         return b;
     }
 
-    private Statement parseStatement(ParseTree tree) {
+    private Statement parseStatement(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         switch (name) {
@@ -75,7 +75,7 @@ public class Parser {
         }
     }
 
-    private Expression parseExpression(ParseTree tree) {
+    private Expression parseExpression(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         Expression exp = parseRelation(tree.getChild(0));
@@ -99,7 +99,7 @@ public class Parser {
         return exp;
     }
 
-    private Expression parseRelation(ParseTree tree) {
+    private Expression parseRelation(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         Expression exp = parseFactor(tree.getChild(0));
@@ -135,7 +135,7 @@ public class Parser {
         return exp;
     }
 
-    private Expression parseFactor(ParseTree tree) {
+    private Expression parseFactor(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         Expression exp = parseTerm(tree.getChild(0));
@@ -155,7 +155,7 @@ public class Parser {
         return exp;
     }
 
-    private Expression parseTerm(ParseTree tree) {
+    private Expression parseTerm(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         Expression exp = parseUnary(tree.getChild(0));
@@ -175,7 +175,7 @@ public class Parser {
         return exp;
     }
 
-    private Expression parseUnary(ParseTree tree) {
+    private Expression parseUnary(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         switch (tree.getChildCount()) {
@@ -207,7 +207,7 @@ public class Parser {
         return new Empty();
     }
 
-    private Expression parseReference(ParseTree tree) {
+    private Expression parseReference(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         if (tree.getChildCount() == 1) {
@@ -225,12 +225,15 @@ public class Parser {
                     }
                     return new FunctionReference(parseReference(tree.getChild(0)), exps);
                 }
+                case "." : {
+                    return new TupleReference(parseReference(tree.getChild(0)), new IDENT(tree.getChild(2).getText()));
+                }
             }
         }
         return new Empty();
     }
 
-    private Expression parsePrimary(ParseTree tree) {
+    private Expression parsePrimary(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         switch (tree.getChildCount()) {
@@ -260,7 +263,7 @@ public class Parser {
         return new Empty();
     }
 
-    private Expression parseFunctionLiteral(ParseTree tree) {
+    private Expression parseFunctionLiteral(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         ArrayList<IDENT> paramNames = new ArrayList<>();
@@ -274,7 +277,7 @@ public class Parser {
         }
     }
 
-    private Expression parseLiteral(ParseTree tree) {
+    private Expression parseLiteral(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
 
@@ -306,14 +309,26 @@ public class Parser {
                     return parseArray(tree.getChild(0));
                 }
                 case "tuple": {
-                    System.out.println("TUPLE");
+                    tree = tree.getChild(0);
+                    ArrayList<IDENT> idents = new ArrayList<>();
+                    ArrayList<Expression> exps = new ArrayList<>();
+                    for (int i = 1; i < tree.getChildCount(); i += 2) {
+                        if (tree.getChild(i).getChildCount() == 1) {
+                            idents.add(null);
+                            exps.add(parseExpression(tree.getChild(i).getChild(0)));
+                        } else {
+                            idents.add(new IDENT(tree.getChild(i).getChild(0).getText()));
+                            exps.add(parseExpression(tree.getChild(i).getChild(2)));
+                        }
+                    }
+                    return new Tuple(idents, exps);
                 }
             }
         }
         return new Empty();
     }
 
-    private Expression parseArray(ParseTree tree) {
+    private Expression parseArray(ParseTree tree) throws Exception {
         String name = tree.getClass().getSimpleName().replaceAll("Context$", "").toLowerCase();
         System.out.println(name);
         ArrayList<Expression> exps = new ArrayList<>();

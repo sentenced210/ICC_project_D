@@ -14,7 +14,7 @@
                   "var_definition": [
                     {
                       "type": 51,
-                      "text": "a"
+                      "text": "d"
                     },
                     {
                       "type": 3,
@@ -35,8 +35,248 @@
                                             {
                                               "literal": [
                                                 {
-                                                  "type": 48,
-                                                  "text": "5.5"
+                                                  "type": 47,
+                                                  "text": "3"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "statement": [
+            {
+              "declaration": [
+                {
+                  "type": 1,
+                  "text": "var"
+                },
+                {
+                  "var_definition": [
+                    {
+                      "type": 51,
+                      "text": "x"
+                    },
+                    {
+                      "type": 3,
+                      "text": ":\u003d"
+                    },
+                    {
+                      "expression": [
+                        {
+                          "relation": [
+                            {
+                              "factor": [
+                                {
+                                  "term": [
+                                    {
+                                      "unary": [
+                                        {
+                                          "primary": [
+                                            {
+                                              "literal": [
+                                                {
+                                                  "tuple": [
+                                                    {
+                                                      "type": 39,
+                                                      "text": "{"
+                                                    },
+                                                    {
+                                                      "tuple_element": [
+                                                        {
+                                                          "type": 51,
+                                                          "text": "a"
+                                                        },
+                                                        {
+                                                          "type": 3,
+                                                          "text": ":\u003d"
+                                                        },
+                                                        {
+                                                          "expression": [
+                                                            {
+                                                              "relation": [
+                                                                {
+                                                                  "factor": [
+                                                                    {
+                                                                      "term": [
+                                                                        {
+                                                                          "unary": [
+                                                                            {
+                                                                              "primary": [
+                                                                                {
+                                                                                  "literal": [
+                                                                                    {
+                                                                                      "type": 47,
+                                                                                      "text": "1"
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 2,
+                                                      "text": ","
+                                                    },
+                                                    {
+                                                      "tuple_element": [
+                                                        {
+                                                          "type": 51,
+                                                          "text": "b"
+                                                        },
+                                                        {
+                                                          "type": 3,
+                                                          "text": ":\u003d"
+                                                        },
+                                                        {
+                                                          "expression": [
+                                                            {
+                                                              "relation": [
+                                                                {
+                                                                  "factor": [
+                                                                    {
+                                                                      "term": [
+                                                                        {
+                                                                          "unary": [
+                                                                            {
+                                                                              "primary": [
+                                                                                {
+                                                                                  "literal": [
+                                                                                    {
+                                                                                      "type": 47,
+                                                                                      "text": "3"
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 2,
+                                                      "text": ","
+                                                    },
+                                                    {
+                                                      "tuple_element": [
+                                                        {
+                                                          "type": 51,
+                                                          "text": "c"
+                                                        },
+                                                        {
+                                                          "type": 3,
+                                                          "text": ":\u003d"
+                                                        },
+                                                        {
+                                                          "expression": [
+                                                            {
+                                                              "relation": [
+                                                                {
+                                                                  "factor": [
+                                                                    {
+                                                                      "term": [
+                                                                        {
+                                                                          "unary": [
+                                                                            {
+                                                                              "primary": [
+                                                                                {
+                                                                                  "literal": [
+                                                                                    {
+                                                                                      "type": 47,
+                                                                                      "text": "2"
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 2,
+                                                      "text": ","
+                                                    },
+                                                    {
+                                                      "tuple_element": [
+                                                        {
+                                                          "expression": [
+                                                            {
+                                                              "relation": [
+                                                                {
+                                                                  "factor": [
+                                                                    {
+                                                                      "term": [
+                                                                        {
+                                                                          "unary": [
+                                                                            {
+                                                                              "reference": [
+                                                                                {
+                                                                                  "type": 51,
+                                                                                  "text": "d"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": 40,
+                                                      "text": "}"
+                                                    }
+                                                  ]
                                                 }
                                               ]
                                             }
@@ -79,8 +319,20 @@
                                     {
                                       "reference": [
                                         {
+                                          "reference": [
+                                            {
+                                              "type": 51,
+                                              "text": "x"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": 46,
+                                          "text": "."
+                                        },
+                                        {
                                           "type": 51,
-                                          "text": "a"
+                                          "text": "b"
                                         }
                                       ]
                                     }
