@@ -101,3 +101,5 @@ IDENT : [A-Za-z][_a-zA-Z0-9]*;
 Comment : ('//' ~[\r\n]* | '/*' .*? '*/') -> skip;
 
 WS: [\n\t\r ;]+ -> skip;
+
+ErrorCharacter : . {this.notifyListeners(new LexerNoViableAltException(this, _input, _tokenStartLine, null)); };
