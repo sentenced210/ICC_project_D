@@ -5,6 +5,7 @@ import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
 import scope.Scope;
+import types.EmptyValue;
 import types.IntegerValue;
 
 public class ScopeChecker {
@@ -39,9 +40,20 @@ public class ScopeChecker {
                 if (sc.isDeclared(varName)) {
                     throw new Exception(varName + " is already declared in this scope");
                 }
-                sc.newVariable(varName, new IntegerValue(1));
+                sc.newVariable(varName, new EmptyValue());
             }
-            
+            if (name.equals("function_literal")) {
+                sc.newScope();
+                for (int i = 2; i < tree.getChildCount() - 1; i += 2) {
+                    String paramName = tree.getChild(i).getText();
+                    sc.newVariable(paramName, new EmptyValue());
+                }
+                for (int i = 0; i < tree.getChildCount(); i++) {
+                    traverse(tree.getChild(i));
+                }
+                sc.endOfScope();
+                return;
+            }
             for (int i = 0; i < tree.getChildCount(); i++) {
                 traverse(tree.getChild(i));
             }
