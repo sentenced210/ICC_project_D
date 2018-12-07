@@ -283,15 +283,18 @@ public class Parser {
             Token token = ((TerminalNodeImpl) tree).getSymbol();
             switch (token.getType()) {
                 case DLexer.INTEGER: {
-                    System.out.println("INTEGER=" + token.getText());
+//                    System.out.println("INTEGER=" + token.getText());
                     return new Integer(java.lang.Integer.valueOf(token.getText()));
                 }
                 case DLexer.BOOLEAN: {
                     return new Boolean(java.lang.Boolean.valueOf(token.getText()));
                 }
                 case DLexer.STRING: {
-                    System.out.println("STRING=" + token.getText());
+//                    System.out.println("STRING=" + token.getText());
                     return new MyString(token.getText());
+                }
+                case DLexer.REAL: {
+                    return new Real(java.lang.Double.valueOf(token.getText()));
                 }
                 default: {
                     return new Empty();

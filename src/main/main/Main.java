@@ -42,25 +42,18 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-
-
-
         String s = JsonCreater.toJson(tree);
         PrintWriter pw = new PrintWriter(new File("ast.json"));
         pw.write(s);
         pw.close();
 
+//        ScopeChecker sc = new ScopeChecker();
+//        sc.check(tree);
+
         Parser p = new Parser(tree);
         Body b = p.parse();
         Scope scope = new Scope();
         b.execute(scope);
-
-//        ScopeChecker sc = new ScopeChecker();
-//        sc.check(tree);
-//
-//
-//        Parser p = new Parser(tree);
-//        p.parse();
     }
 
 }
